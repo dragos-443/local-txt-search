@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-txt-search"
+version = "0.1.0"
+description = "Motore di ricerca locale per file di testo basato su Whoosh"
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "Whoosh==2.7.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9,<10",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

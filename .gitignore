@@ -1,0 +1,13 @@
+# Generated local indices and caches
+.local_index/
+*.idx
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Local measurements and temporary output
+*.log
+.DS_Store
