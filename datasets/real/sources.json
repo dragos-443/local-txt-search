@@ -1,0 +1,379 @@
+{
+  "pairs": [
+    {
+      "pair_id": "01",
+      "it": {
+        "path": "it/01_informatica.txt",
+        "title": "Informatica",
+        "page_id": 1681180,
+        "revision_id": 152973274
+      },
+      "en": {
+        "path": "en/01_computer_science.txt",
+        "title": "Computer science",
+        "page_id": 5323,
+        "revision_id": 1380596843
+      }
+    },
+    {
+      "pair_id": "02",
+      "it": {
+        "path": "it/02_base_di_dati.txt",
+        "title": "Base di dati",
+        "page_id": 1589,
+        "revision_id": 152291993
+      },
+      "en": {
+        "path": "en/02_database.txt",
+        "title": "Database",
+        "page_id": 8377,
+        "revision_id": 1383142210
+      }
+    },
+    {
+      "pair_id": "03",
+      "it": {
+        "path": "it/03_motore_di_ricerca.txt",
+        "title": "Motore di ricerca",
+        "page_id": 38646,
+        "revision_id": 153306192
+      },
+      "en": {
+        "path": "en/03_search_engine_computing.txt",
+        "title": "Search engine (computing)",
+        "page_id": 27804,
+        "revision_id": 1380766394
+      }
+    },
+    {
+      "pair_id": "04",
+      "it": {
+        "path": "it/04_algoritmo.txt",
+        "title": "Algoritmo",
+        "page_id": 2869657,
+        "revision_id": 153315439
+      },
+      "en": {
+        "path": "en/04_algorithm.txt",
+        "title": "Algorithm",
+        "page_id": 775,
+        "revision_id": 1384972961
+      }
+    },
+    {
+      "pair_id": "05",
+      "it": {
+        "path": "it/05_internet.txt",
+        "title": "Internet",
+        "page_id": 2265,
+        "revision_id": 152887611
+      },
+      "en": {
+        "path": "en/05_internet.txt",
+        "title": "Internet",
+        "page_id": 14539,
+        "revision_id": 1384979951
+      }
+    },
+    {
+      "pair_id": "06",
+      "it": {
+        "path": "it/06_world_wide_web.txt",
+        "title": "World Wide Web",
+        "page_id": 1332055,
+        "revision_id": 153028189
+      },
+      "en": {
+        "path": "en/06_world_wide_web.txt",
+        "title": "World Wide Web",
+        "page_id": 33139,
+        "revision_id": 1383774564
+      }
+    },
+    {
+      "pair_id": "07",
+      "it": {
+        "path": "it/07_intelligenza_artificiale.txt",
+        "title": "Intelligenza artificiale",
+        "page_id": 2284463,
+        "revision_id": 153278044
+      },
+      "en": {
+        "path": "en/07_artificial_intelligence.txt",
+        "title": "Artificial intelligence",
+        "page_id": 1164,
+        "revision_id": 1384997077
+      }
+    },
+    {
+      "pair_id": "08",
+      "it": {
+        "path": "it/08_apprendimento_automatico.txt",
+        "title": "Apprendimento automatico",
+        "page_id": 605,
+        "revision_id": 152947022
+      },
+      "en": {
+        "path": "en/08_machine_learning.txt",
+        "title": "Machine learning",
+        "page_id": 233488,
+        "revision_id": 1384336237
+      }
+    },
+    {
+      "pair_id": "09",
+      "it": {
+        "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+        "title": "Elaborazione del linguaggio naturale",
+        "page_id": 23166,
+        "revision_id": 148073957
+      },
+      "en": {
+        "path": "en/09_natural_language_processing.txt",
+        "title": "Natural language processing",
+        "page_id": 21652,
+        "revision_id": 1383133655
+      }
+    },
+    {
+      "pair_id": "10",
+      "it": {
+        "path": "it/10_statistica.txt",
+        "title": "Statistica",
+        "page_id": 3808,
+        "revision_id": 151071792
+      },
+      "en": {
+        "path": "en/10_statistics.txt",
+        "title": "Statistics",
+        "page_id": 26685,
+        "revision_id": 1384330083
+      }
+    },
+    {
+      "pair_id": "11",
+      "it": {
+        "path": "it/11_probabilita.txt",
+        "title": "Probabilità",
+        "page_id": 3262,
+        "revision_id": 151512540
+      },
+      "en": {
+        "path": "en/11_probability.txt",
+        "title": "Probability",
+        "page_id": 22934,
+        "revision_id": 1381440308
+      }
+    },
+    {
+      "pair_id": "12",
+      "it": {
+        "path": "it/12_matematica.txt",
+        "title": "Matematica",
+        "page_id": 2708,
+        "revision_id": 153197082
+      },
+      "en": {
+        "path": "en/12_mathematics.txt",
+        "title": "Mathematics",
+        "page_id": 18831,
+        "revision_id": 1385036528
+      }
+    },
+    {
+      "pair_id": "13",
+      "it": {
+        "path": "it/13_fisica.txt",
+        "title": "Fisica",
+        "page_id": 2577462,
+        "revision_id": 152452726
+      },
+      "en": {
+        "path": "en/13_physics.txt",
+        "title": "Physics",
+        "page_id": 22939,
+        "revision_id": 1384142980
+      }
+    },
+    {
+      "pair_id": "14",
+      "it": {
+        "path": "it/14_chimica.txt",
+        "title": "Chimica",
+        "page_id": 2352368,
+        "revision_id": 152312325
+      },
+      "en": {
+        "path": "en/14_chemistry.txt",
+        "title": "Chemistry",
+        "page_id": 5180,
+        "revision_id": 1384268382
+      }
+    },
+    {
+      "pair_id": "15",
+      "it": {
+        "path": "it/15_biologia.txt",
+        "title": "Biologia",
+        "page_id": 620,
+        "revision_id": 153022336
+      },
+      "en": {
+        "path": "en/15_biology.txt",
+        "title": "Biology",
+        "page_id": 9127632,
+        "revision_id": 1383003680
+      }
+    },
+    {
+      "pair_id": "16",
+      "it": {
+        "path": "it/16_astronomia.txt",
+        "title": "Astronomia",
+        "page_id": 9,
+        "revision_id": 151684563
+      },
+      "en": {
+        "path": "en/16_astronomy.txt",
+        "title": "Astronomy",
+        "page_id": 50650,
+        "revision_id": 1377879713
+      }
+    },
+    {
+      "pair_id": "17",
+      "it": {
+        "path": "it/17_terra.txt",
+        "title": "Terra",
+        "page_id": 4215,
+        "revision_id": 153051027
+      },
+      "en": {
+        "path": "en/17_earth.txt",
+        "title": "Earth",
+        "page_id": 9228,
+        "revision_id": 1384491245
+      }
+    },
+    {
+      "pair_id": "18",
+      "it": {
+        "path": "it/18_energia.txt",
+        "title": "Energia",
+        "page_id": 1706832,
+        "revision_id": 152342460
+      },
+      "en": {
+        "path": "en/18_energy.txt",
+        "title": "Energy",
+        "page_id": 9649,
+        "revision_id": 1378442640
+      }
+    },
+    {
+      "pair_id": "19",
+      "it": {
+        "path": "it/19_ecologia.txt",
+        "title": "Ecologia",
+        "page_id": 1336739,
+        "revision_id": 153309051
+      },
+      "en": {
+        "path": "en/19_ecology.txt",
+        "title": "Ecology",
+        "page_id": 9630,
+        "revision_id": 1381370177
+      }
+    },
+    {
+      "pair_id": "20",
+      "it": {
+        "path": "it/20_clima.txt",
+        "title": "Clima",
+        "page_id": 110760,
+        "revision_id": 152220175
+      },
+      "en": {
+        "path": "en/20_climate.txt",
+        "title": "Climate",
+        "page_id": 5999,
+        "revision_id": 1374280114
+      }
+    },
+    {
+      "pair_id": "21",
+      "it": {
+        "path": "it/21_cambiamento_climatico.txt",
+        "title": "Cambiamento climatico",
+        "page_id": 226744,
+        "revision_id": 153314667
+      },
+      "en": {
+        "path": "en/21_climate_change.txt",
+        "title": "Climate change",
+        "page_id": 5042951,
+        "revision_id": 1383409984
+      }
+    },
+    {
+      "pair_id": "22",
+      "it": {
+        "path": "it/22_mobilita_sostenibile.txt",
+        "title": "Mobilità sostenibile",
+        "page_id": 580450,
+        "revision_id": 149193465
+      },
+      "en": {
+        "path": "en/22_sustainable_transport.txt",
+        "title": "Sustainable transport",
+        "page_id": 1002744,
+        "revision_id": 1384998600
+      }
+    },
+    {
+      "pair_id": "23",
+      "it": {
+        "path": "it/23_trasporto_pubblico.txt",
+        "title": "Trasporto pubblico",
+        "page_id": 61677,
+        "revision_id": 149559611
+      },
+      "en": {
+        "path": "en/23_public_transport.txt",
+        "title": "Public transport",
+        "page_id": 26162030,
+        "revision_id": 1383392154
+      }
+    },
+    {
+      "pair_id": "24",
+      "it": {
+        "path": "it/24_citta.txt",
+        "title": "Città",
+        "page_id": 1341975,
+        "revision_id": 151108771
+      },
+      "en": {
+        "path": "en/24_city.txt",
+        "title": "City",
+        "page_id": 5391,
+        "revision_id": 1384651391
+      }
+    },
+    {
+      "pair_id": "25",
+      "it": {
+        "path": "it/25_robotica.txt",
+        "title": "Robotica",
+        "page_id": 37667,
+        "revision_id": 152246633
+      },
+      "en": {
+        "path": "en/25_robotics.txt",
+        "title": "Robotics",
+        "page_id": 20903754,
+        "revision_id": 1385014472
+      }
+    }
+  ]
+}

@@ -2,9 +2,10 @@
 
 Progetto per l'**Homework 3 — Ingegneria dei dati (A.A. 2026/27)**.
 
-**Stato:** M0 completata. Il package Python è installabile e la CLI minima è
-avviabile; indicizzazione, ricerca, dataset, risultati e report conclusivo saranno
-realizzati nelle milestone successive.
+**Stato:** M0 e M1 completate. Il package Python è installabile, la CLI minima è
+avviabile e i corpus con l'oracolo delle query sono verificati. Indicizzazione,
+ricerca, risultati osservati e report conclusivo saranno realizzati nelle
+milestone successive.
 
 ## Obiettivo
 
@@ -49,8 +50,8 @@ comandi appartiene rispettivamente a M2 e M3.
 3. Usare [`docs/EVALUATION_PLAN.md`](docs/EVALUATION_PLAN.md) per progettare esperimenti e relazione.
 
 Il codice di bootstrap è in `src/local_txt_search/` e i suoi test sono in
-`tests/`. Le directory `datasets/`, `evaluation/` e `report/` contengono ancora
-solo README segnaposto; non sono stati creati o scaricati corpus.
+`tests/`. I corpus sono in `datasets/`, mentre `evaluation/queries.json`
+contiene le query e gli attesi definiti prima del motore di ricerca.
 
 ## Consegna
 
@@ -58,8 +59,10 @@ Il corso richiede una relazione con URL della repository, motivazioni degli anal
 
 ## Note di progetto
 
-- Il target sperimentale concordato è un corpus reale di **circa 50 documenti pubblici** (25 italiani, 25 inglesi), da selezionare in una milestone successiva.
-- Sono previsti anche documenti sintetici controllati per verificare la correttezza; **non sono inclusi in questo scaffold**.
+- Il corpus reale comprende **50 documenti pubblici** (25 italiani e 25
+  inglesi) derivati da revisioni Wikipedia dichiarate nel manifest.
+- Il corpus sintetico comprende 12 documenti validi, una fixture non UTF-8 e
+  13 query con insiemi completi di risultati attesi.
 - I comandi applicativi descritti nel PRD sono ancora una specifica futura. La
   CLI di M0 ne segnala esplicitamente la mancata implementazione.
 - Il repository Git è locale; pubblicazione e verifica del collegamento GitHub

@@ -7,18 +7,23 @@
 - **RQ1:** la ricerca rispetta le regole degli analyzer e la grammatica delle query?
 - **RQ2:** quanti file vengono indicizzati e quanto tempo richiede la costruzione dell'indice su un corpus pubblico reale?
 
-## 2. Corpus previsti (ancora da creare)
+## 2. Corpus preparati
 
 | Corpus | Scopo | Dimensione obiettivo | Stato |
 |---|---|---|---|
-| Sintetico | Correttezza di query e gestione errori | Circa 12 `.txt` validi + 1 non UTF-8 | Da realizzare |
-| Reale | Conteggi e tempi di indicizzazione | Circa 50 `.txt`: 25 IT + 25 EN | Da selezionare |
+| Sintetico | Correttezza di query e gestione errori | 12 `.txt` validi + 1 non UTF-8 | Preparato in M1 |
+| Reale | Conteggi e tempi di indicizzazione | 50 `.txt`: 25 IT + 25 EN | Preparato in M1 |
 
-Documentare provenienza, licenze, trasformazioni e SHA-256 dei file reali. Non usare testi non redistribuibili nella repository pubblica.
+Il corpus reale usa introduzioni Wikipedia con revisioni congelate. Provenienza,
+licenza CC BY-SA 4.0, trasformazioni, dimensioni e SHA-256 sono registrati in
+`datasets/real/manifest.csv`; `sources.json` consente la rigenerazione dalle
+revisioni esatte.
 
 ## 3. Matrice di casi funzionali
 
-Realizzare almeno 10–12 query e fissare **prima dell'esecuzione** i documenti attesi. I casi dovranno includere:
+Le 13 query e i documenti attesi sono stati fissati in
+`evaluation/queries.json` **prima dell'implementazione della ricerca**. La
+matrice copre:
 
 | Caso | Esempio di query | Verifica |
 |---|---|---|
@@ -26,7 +31,7 @@ Realizzare almeno 10–12 query e fissare **prima dell'esecuzione** i documenti 
 | Nome in maiuscolo | `nome CITTÀ` | Lowercase |
 | AND nel nome | `nome data notes` | Entrambi i token, qualsiasi ordine |
 | Frase nel nome | `nome "data integration"` | Termini consecutivi |
-| Frase inesistente | `nome "data notes"` | Assenza di falso positivo |
+| Frase inesistente | `nome "integration data"` | Assenza di falso positivo |
 | Frase nel contenuto | `contenuto "urban mobility"` | Ricerca EN |
 | Stopword nella frase | `contenuto "integrazione dei dati"` | Conservazione stopword |
 | AND nel contenuto | `contenuto data sources` | Termini in posizioni diverse |
@@ -35,7 +40,9 @@ Realizzare almeno 10–12 query e fissare **prima dell'esecuzione** i documenti 
 | Assenza stemming | `contenuto runs` | Non unificare automaticamente con `running` |
 | Nome duplicato | `nome notes` | Distinguere percorsi differenti |
 
-Gli ID attesi per queste query saranno definiti **dopo** aver creato i documenti, senza assumere contenuti non ancora presenti. Si possono aggiungere test per sintassi non valida, file vuoto e codifica non UTF-8.
+Gli ID attesi sono percorsi relativi al corpus sintetico. File vuoto e codifica
+non UTF-8 sono fixture del corpus; gli errori di sintassi saranno aggiunti con il
+parser in M3/M4.
 
 **Misura di correttezza:** per ogni query confrontare l'insieme completo dei percorsi restituiti con l'insieme atteso. Un test è superato solo se i due insiemi coincidono.
 

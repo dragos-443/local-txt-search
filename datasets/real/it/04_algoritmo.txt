@@ -1,0 +1,9 @@
+In matematica e informatica un algoritmo è la specificazione di una sequenza finita di operazioni (dette anche istruzioni) che consente di risolvere tutti i quesiti di una stessa classe o di calcolare il risultato di un'espressione matematica.
+
+Un algoritmo deve essere:
+
+Il termine deriva dalla trascrizione latina del nome del matematico persiano al-Khwarizmi, vissuto nel IX secolo d.C., che è considerato uno dei primi autori ad aver fatto riferimento a questo concetto nel suo libro: ‘Regole di ripristino e riduzione’.
+
+Le prime nozioni di algoritmo si trovano in documenti risalenti al XVII secolo a.C., conosciuti come i papiri di Ahmes, noti anche come papiri di Rhind, che contengono una collezione di problemi con relativa soluzione, comprendendo un problema di moltiplicazione che lo scrittore dichiara di aver copiato da altri papiri anteriori di due secoli.
+
+L'algoritmo è un concetto fondamentale dell'informatica, anzitutto perché è alla base della nozione teorica di calcolabilità: un problema è calcolabile quando è risolvibile mediante un algoritmo. Inoltre, l'algoritmo è un concetto cardine anche nella fase di programmazione dello sviluppo di un software: preso un problema da automatizzare, la programmazione costituisce essenzialmente la traduzione o codifica di un algoritmo per tale problema in programma, scritto in un certo linguaggio, che può essere quindi effettivamente eseguito da un calcolatore rappresentandone la logica di elaborazione.

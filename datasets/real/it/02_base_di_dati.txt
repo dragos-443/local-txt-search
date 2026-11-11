@@ -1,0 +1,5 @@
+In informatica una base di dati o banca dati (dall'inglese data base) è una collezione organizzata di dati in forma elettronica.
+
+La progettazione delle basi di dati è un'attività complessa, che si basa sull'applicazione di tecniche formali in congiunzione a considerazioni pratiche derivate dalla natura dei dati stessi. In fase di progettazione si affrontano quindi problemi in materia di modellazione, rappresentazione, archiviazione e accesso ai dati, oltre che della loro sicurezza, privatezza e integrità. Senza contare altre questioni di contorno che pertengono più propriamente ai DBMS.
+
+Nel linguaggio comune, la locuzione database tende a essere utilizzata impropriamente con varie sfumature di significato, di ordine più generale rispetto a "collezione astratta di dati":

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "Q01",
+    "query": "nome universita",
+    "expected_paths": ["it/università_città.txt"]
+  },
+  {
+    "id": "Q02",
+    "query": "nome CITTÀ",
+    "expected_paths": ["it/università_città.txt", "it/città_sostenibili.txt"]
+  },
+  {
+    "id": "Q03",
+    "query": "nome data notes",
+    "expected_paths": ["en/data_notes.txt"]
+  },
+  {
+    "id": "Q04",
+    "query": "nome \"data integration\"",
+    "expected_paths": ["en/data-integration.txt"]
+  },
+  {
+    "id": "Q05",
+    "query": "nome \"integration data\"",
+    "expected_paths": []
+  },
+  {
+    "id": "Q06",
+    "query": "contenuto \"urban mobility\"",
+    "expected_paths": ["en/data_notes.txt", "en/urban-mobility.txt"]
+  },
+  {
+    "id": "Q07",
+    "query": "contenuto \"integrazione dei dati\"",
+    "expected_paths": ["it/università_città.txt", "it/integrazione_dati.txt"]
+  },
+  {
+    "id": "Q08",
+    "query": "contenuto data sources",
+    "expected_paths": ["en/data-integration.txt", "en/data_notes.txt"]
+  },
+  {
+    "id": "Q09",
+    "query": "contenuto \"citta sostenibili\"",
+    "expected_paths": ["it/trasporto-pubblico.txt", "it/città_sostenibili.txt"]
+  },
+  {
+    "id": "Q10",
+    "query": "nome \"trasporto pubblico\"",
+    "expected_paths": ["it/trasporto-pubblico.txt"]
+  },
+  {
+    "id": "Q11",
+    "query": "contenuto runs",
+    "expected_paths": ["en/runs.txt"]
+  },
+  {
+    "id": "Q12",
+    "query": "contenuto running",
+    "expected_paths": ["en/running.txt"]
+  },
+  {
+    "id": "Q13",
+    "query": "nome notes",
+    "expected_paths": ["en/data_notes.txt", "a/notes.txt", "b/notes.txt"]
+  }
+]

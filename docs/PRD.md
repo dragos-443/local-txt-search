@@ -2,7 +2,7 @@
 
 **Progetto:** `local-txt-search`  
 **Corso:** Ingegneria dei dati — Homework 3 (individuale), 2026/2027  
-**Stato:** progetto architetturale, da implementare  
+**Stato:** M0–M1 completate; indicizzazione e ricerca da implementare
 **Ultima revisione:** 11 novembre 2026
 
 ## 1. Problema
@@ -86,11 +86,16 @@ contenuto "<frase>"                    # adiacenza e ordine
 - Ricerca case- e accent-insensitive, senza traduzione e senza match per sottostringhe.
 - Risultati: numero totale, primi 10 documenti, `filename`, percorso relativo e score; BM25F predefinito di Whoosh come ordinamento, senza attribuire allo score significato probabilistico.
 
-## 7. Dati sperimentali — specifica, non contenuto dello scaffold
+## 7. Dati sperimentali
 
-- **Corpus A (sintetico):** prevedere circa 12 documenti costruiti a mano, con almeno un caso di errore di codifica separato; includere testo IT/EN, accenti, underscore, trattini, file omonimi, frasi e file vuoti.
-- **Corpus B (reale):** target **50 file** pubblici `.txt` (25 IT + 25 EN), da selezionare e preparare **successivamente**; registrare fonte, licenza, eventuali trasformazioni, percorso, bytes e hash SHA-256.
-- Nessun dataset e nessuna fonte precisa sono fissati o inclusi in questa versione della repository; riutilizzare solo materiale con condizioni di licenza rispettate.
+- **Corpus A (sintetico):** 12 documenti costruiti a mano e un caso di errore
+  di codifica separato; include testo IT/EN, accenti, underscore, trattini, file
+  omonimi, frasi e file vuoti.
+- **Corpus B (reale):** 50 introduzioni Wikipedia `.txt` (25 IT + 25 EN) con
+  revisioni congelate; fonte, licenza, trasformazioni, percorso, bytes e hash
+  SHA-256 sono registrati nel manifest.
+- Le 13 query e gli insiemi attesi sono in `evaluation/queries.json`. Non sono
+  ancora presenti risultati osservati o misure di indicizzazione.
 
 ## 8. Qualità, verificabilità e limiti
 

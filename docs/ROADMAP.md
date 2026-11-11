@@ -1,6 +1,7 @@
 # ROADMAP — Dal progetto alla consegna
 
-**Stato del progetto:** bootstrap Python installabile e repository Git locale; nessun comando applicativo o dataset implementato.  
+**Stato del progetto:** M0 e M1 completate; bootstrap installabile, corpus e
+oracolo disponibili. I comandi applicativi iniziano con M2.
 **Scadenza del corso:** 13 novembre 2026, ore 18:00.
 
 ## Dipendenze
@@ -19,7 +20,7 @@ M0 Fondazioni
 | Milestone | Obiettivo | Deliverable principale | Condizione di completamento | Stato |
 |---|---|---|---|---|
 | **M0** | Definire architettura, scope e bootstrap | Package installabile, CLI minima, README, PRD, roadmap, piano sperimentale | Installazione e verifiche riproducibili | **Completata** |
-| **M1** | Preparare corpus e casi attesi | Corpus sintetico, corpus pubblico, manifest, matrice query | Dataset e attesi verificati | Da fare |
+| **M1** | Preparare corpus e casi attesi | Corpus sintetico, corpus pubblico, manifest, matrice query | Dataset e attesi verificati | **Completata** |
 | **M2** | Implementare la costruzione indice | Scanner, reader, analyzer, schema, index writer | Scansione e indice persistente funzionanti | Da fare |
 | **M3** | Implementare ricerca e CLI | Parser validato, comandi `index` e `search` | Query base, AND e phrase disponibili | Da fare |
 | **M4** | Verificare correttezza | Test automatici, error handling | Query e casi limite conformi agli attesi | Da fare |
@@ -37,7 +38,7 @@ M0 Fondazioni
 
 **Gate superato:** un altro sviluppatore può creare l'ambiente, installare il package, avviare la guida CLI ed eseguire i test seguendo il README.
 
-## M1 — Corpus e oracoli [da fare]
+## M1 — Corpus e oracoli [completata]
 
 - Selezionare **circa 50** testi pubblici, con obiettivo 25 IT/25 EN, verificando permessi di riuso.
 - Convertire a `.txt` e UTF-8, se necessario, registrando metodi di trasformazione e provenienza.
@@ -46,6 +47,11 @@ M0 Fondazioni
 - Aggiungere manifest con licenza, URL, SHA-256 e dimensione, senza dati o risultati falsamente dichiarati.
 
 **Gate:** dataset reale disponibile e oracolo di test sintetico indipendente dal codice.
+
+**Gate superato:** 12 documenti sintetici validi e un caso non UTF-8, 50
+introduzioni Wikipedia IT/EN con revisioni e hash congelati, e 13 query con
+insiemi attesi indipendenti dal motore. I controlli automatici verificano
+conteggi, codifica, manifest e riferimenti dell'oracolo.
 
 ## M2 — Indicizzazione [da fare]
 

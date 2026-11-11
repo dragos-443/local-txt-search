@@ -1,4 +1,7 @@
 # evaluation/
 
-Directory riservata agli input e agli output della valutazione futura: query, risultati attesi/ottenuti e tre run di indicizzazione.
-Non contiene misure, query eseguite o benchmark precalcolati. Piano in `../docs/EVALUATION_PLAN.md`.
+`queries.json` contiene l'oracolo definito in M1: query e insiemi completi di
+percorsi attesi sul corpus sintetico. Non contiene risultati osservati.
+
+Gli output della ricerca e le tre esecuzioni di indicizzazione saranno aggiunti
+nelle milestone M4 e M5. Piano in [`../docs/EVALUATION_PLAN.md`](../docs/EVALUATION_PLAN.md).

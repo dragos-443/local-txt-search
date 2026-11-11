@@ -1,0 +1,7 @@
+La matematica (dal greco μαθηματικά mathēmatiká «ciò che è relativo alla conoscenza, all'apprendimento») è la disciplina che studia le quantità, i numeri, lo spazio, le strutture, i calcoli e, in generale, gli oggetti astratti rigorosamente definiti, e le relazioni tra essi.
+
+Con il termine matematica di solito si designa la disciplina (e il relativo corpo di conoscenze) che studia problemi concernenti quantità, estensioni e figure spaziali, movimenti di corpi e tutte le strutture che permettono di trattare questi aspetti in modo generale.
+
+La matematica fa largo uso degli strumenti della logica e sviluppa le proprie conoscenze nel quadro di sistemi ipotetico-deduttivi che, a partire da definizioni rigorose e da assiomi riguardanti proprietà degli oggetti definiti (risultati da un procedimento di astrazione, come triangoli, funzioni, vettori ecc.), raggiunge nuove certezze, per mezzo delle dimostrazioni, attorno a proprietà meno intuitive degli oggetti stessi (espresse dai teoremi).
+
+La potenza e la generalità dei risultati della matematica le ha reso l'appellativo di regina delle scienze: ogni disciplina scientifica o tecnica, dalla fisica all'ingegneria, dall'economia all'informatica, fa largo uso degli strumenti di analisi, di calcolo e di modellazione offerti dalla matematica.
