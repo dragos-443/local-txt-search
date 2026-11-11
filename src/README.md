@@ -1,9 +1,9 @@
 # src/
 
-Contiene il package Python `local_txt_search`, il punto di ingresso CLI minimo e
-l'API di indicizzazione persistente realizzata in M2.
+Contiene il package Python `local_txt_search`, il punto di ingresso CLI e i
+moduli per indicizzazione e ricerca.
 
-La CLI è avviabile con `python -m local_txt_search --help`; i comandi applicativi
-saranno collegati in M3. La funzione `local_txt_search.rebuild_index` costruisce
-e pubblica in sicurezza l'indice Whoosh. Vedere `../docs/PRD.md` e
-`../docs/ROADMAP.md`.
+La CLI è avviabile con `python -m local_txt_search --help`. Il comando `index`
+costruisce e pubblica in sicurezza l'indice Whoosh; `search` apre una sessione
+interattiva con parser validato. Vedere `../docs/PRD.md` e `../docs/ROADMAP.md`
+per il contratto applicativo.

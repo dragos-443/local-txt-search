@@ -1,7 +1,8 @@
 # ROADMAP — Dal progetto alla consegna
 
-**Stato del progetto:** M0, M1 e M2 completate; bootstrap, corpus, oracolo e
-costruzione persistente dell'indice disponibili. Parser e CLI iniziano con M3.
+**Stato del progetto:** M0–M3 completate; bootstrap, corpus, oracolo,
+indicizzazione persistente, parser e CLI disponibili. I casi limite aggiuntivi
+e la registrazione degli esiti iniziano con M4.
 **Scadenza del corso:** 13 novembre 2026, ore 18:00.
 
 ## Dipendenze
@@ -22,7 +23,7 @@ M0 Fondazioni
 | **M0** | Definire architettura, scope e bootstrap | Package installabile, CLI minima, README, PRD, roadmap, piano sperimentale | Installazione e verifiche riproducibili | **Completata** |
 | **M1** | Preparare corpus e casi attesi | Corpus sintetico, corpus pubblico, manifest, matrice query | Dataset e attesi verificati | **Completata** |
 | **M2** | Implementare la costruzione indice | Scanner, reader, analyzer, schema, index writer | Scansione e indice persistente funzionanti | **Completata** |
-| **M3** | Implementare ricerca e CLI | Parser validato, comandi `index` e `search` | Query base, AND e phrase disponibili | Da fare |
+| **M3** | Implementare ricerca e CLI | Parser validato, comandi `index` e `search` | Query base, AND e phrase disponibili | **Completata** |
 | **M4** | Verificare correttezza | Test automatici, error handling | Query e casi limite conformi agli attesi | Da fare |
 | **M5** | Misurare le prestazioni | Esecuzioni ripetute, risultati grezzi | Conteggi e tempi reali archiviati | Da fare |
 | **M6** | Redigere la relazione | Relazione con interpretazione dei dati | Ogni affermazione empirica è sostenuta da una misura | Da fare |
@@ -69,7 +70,7 @@ posizioni. La ricostruzione verifica il nuovo indice prima della pubblicazione e
 ripristina quello precedente se la sostituzione fallisce. I test riaprono e
 interrogano l'indice persistente anche dopo la rimozione della sorgente.
 
-## M3 — Parser e CLI [da fare]
+## M3 — Parser e CLI [completata]
 
 - Realizzare `index` con directory di input e percorso indice opzionale.
 - Realizzare `search` interattivo e uscita tramite `exit`.
@@ -78,9 +79,15 @@ interrogano l'indice persistente anche dopo la rimozione della sorgente.
 
 **Gate:** ricerca per termine, multi-termine e frase funziona sui due campi.
 
+**Gate superato:** `index` espone la ricostruzione persistente con statistiche e
+avvisi; `search` mantiene aperto l'indice e gestisce `help`, `exit`, EOF ed errori
+di sintassi senza interrompere la sessione. Il parser usa gli analyzer dello
+schema e costruisce soltanto query `Term`, `And` e `Phrase`. Tutte le 13 query
+dell'oracolo restituiscono l'insieme completo dei percorsi attesi.
+
 ## M4 — Test funzionali [da fare]
 
-- Verificare insieme esatto dei risultati attesi, non soltanto i primi risultati.
+- Mantenere come regressione il confronto completo delle 13 query con gli attesi.
 - Testare accenti, maiuscole, stopword, ordine, assenza di stemming e separatori nei filename.
 - Testare file vuoti, nomi duplicati, encoding non UTF-8, directory non valida e query malformate.
 - Correggere i bug e mantenere traccia degli esiti.

@@ -2,10 +2,10 @@
 
 Progetto per l'**Homework 3 — Ingegneria dei dati (A.A. 2026/27)**.
 
-**Stato:** M0, M1 e M2 completate. Il package Python è installabile, i corpus e
-l'oracolo sono verificati e la costruzione persistente dell'indice è disponibile
-come API Python. Parser, CLI applicativa, risultati osservati e report conclusivo
-saranno realizzati nelle milestone successive.
+**Stato:** M0–M3 completate. Il package Python è installabile, i corpus e
+l'oracolo sono verificati, la costruzione persistente dell'indice è disponibile
+e la CLI consente di indicizzare e cercare. I casi limite aggiuntivi, i risultati
+osservati e il report conclusivo saranno realizzati nelle milestone successive.
 
 ## Obiettivo
 
@@ -31,16 +31,36 @@ python -m pip install -e ".[dev]"
 L'attivazione è facoltativa: i comandi seguenti possono essere eseguiti anche
 specificando direttamente `.\.venv\Scripts\python.exe`.
 
-## Verifica del bootstrap
+## Uso della CLI
 
 ```powershell
 python -m local_txt_search --help
-python -m pytest
+python -m local_txt_search index --source datasets/real
+python -m local_txt_search search
 ```
 
-La guida elenca `index` e `search`, che restano segnaposto fino a M3. La suite
-verifica sia la compatibilità di Whoosh sia la costruzione completa dell'indice
-sui corpus di prova.
+Entrambi i comandi usano `.local_index` per impostazione predefinita. È possibile
+scegliere un'altra destinazione con `--index <directory>`.
+
+Durante la ricerca sono accettate query come:
+
+```text
+nome robotica
+nome data notes
+nome "data integration"
+contenuto mobilità sostenibile
+contenuto "urban mobility"
+```
+
+I termini multipli sono combinati con AND. `help` mostra la grammatica ed `exit`
+termina la sessione. Ogni query cerca in un solo campo; operatori avanzati,
+wildcard e combinazioni fra termini liberi e frasi non sono supportati.
+
+Per eseguire la suite completa:
+
+```powershell
+python -m pytest
+```
 
 ## API di indicizzazione
 
@@ -79,7 +99,7 @@ Il corso richiede una relazione con URL della repository, motivazioni degli anal
   inglesi) derivati da revisioni Wikipedia dichiarate nel manifest.
 - Il corpus sintetico comprende 12 documenti validi, una fixture non UTF-8 e
   13 query con insiemi completi di risultati attesi.
-- I comandi applicativi descritti nel PRD saranno collegati all'API in M3. La
-  CLI ne segnala esplicitamente la mancata implementazione.
+- Le 13 query dell'oracolo sono eseguite automaticamente contro l'indice del
+  corpus sintetico e confrontate con l'insieme completo dei percorsi attesi.
 - Il repository Git è locale; pubblicazione e verifica del collegamento GitHub
   sono previste in M7.

@@ -41,8 +41,8 @@ matrice copre:
 | Nome duplicato | `nome notes` | Distinguere percorsi differenti |
 
 Gli ID attesi sono percorsi relativi al corpus sintetico. File vuoto e codifica
-non UTF-8 sono fixture del corpus; gli errori di sintassi saranno aggiunti con il
-parser in M3/M4.
+non UTF-8 sono fixture del corpus. M3 verifica le 13 query e il recupero dagli
+errori di sintassi di base; M4 estenderà la matrice dei casi limite.
 
 **Misura di correttezza:** per ogni query confrontare l'insieme completo dei percorsi restituiti con l'insieme atteso. Un test è superato solo se i due insiemi coincidono.
 

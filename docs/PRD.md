@@ -2,7 +2,7 @@
 
 **Progetto:** `local-txt-search`  
 **Corso:** Ingegneria dei dati — Homework 3 (individuale), 2026/2027  
-**Stato:** M0–M2 completate; parser, CLI applicativa e ricerca da implementare
+**Stato:** M0–M3 completate; indicizzazione e ricerca CLI disponibili
 **Ultima revisione:** 11 novembre 2026
 
 ## 1. Problema
@@ -58,16 +58,19 @@ Interfaccia Web, scraping, indicizzazione PDF/DOCX, aggiornamenti incrementali, 
 
 **Trade-off:** più affidabilità e leggibilità delle phrase query, ma minore recall morfologica rispetto allo stemming e minore precisione ortografica dopo la rimozione degli accenti.
 
-## 6. Contratto CLI (da realizzare)
+## 6. Contratto CLI (realizzato in M3)
 
-Sono previsti due comandi concettuali:
+Sono disponibili due comandi:
 
 ```text
 python -m local_txt_search index --source <directory> [--index <percorso>]
 python -m local_txt_search search [--index <percorso>]
 ```
 
-Il comando `index` conta documenti scoperti/indicizzati/saltati, costruisce il nuovo indice e mostra durata e avvisi. `search` apre l'indice esistente e legge ripetutamente query dalla console, con `help` ed `exit`.
+Il comando `index` conta documenti scoperti/indicizzati/saltati, costruisce il
+nuovo indice e mostra durata e avvisi. `search` apre l'indice esistente una sola
+volta e legge ripetutamente query dalla console, con `help` ed `exit`. Il percorso
+predefinito condiviso è `.local_index`.
 
 ### Grammatica di ricerca
 
@@ -107,11 +110,11 @@ contenuto "<frase>"                    # adiacenza e ordine
 
 ## 9. Criteri di accettazione finali
 
-- [ ] `index` scansiona ricorsivamente e costruisce un indice persistente.
-- [ ] Nomi e contenuti sono interrogabili separatamente.
-- [ ] I due analyzer sono implementati e motivati.
-- [ ] Query semplici, AND e per frase restituiscono l'insieme corretto di documenti.
-- [ ] File non UTF-8 vengono saltati e segnalati.
+- [x] `index` scansiona ricorsivamente e costruisce un indice persistente.
+- [x] Nomi e contenuti sono interrogabili separatamente.
+- [x] I due analyzer sono implementati e motivati.
+- [x] Query semplici, AND e per frase restituiscono l'insieme corretto di documenti.
+- [x] File non UTF-8 vengono saltati e segnalati.
 - [ ] Test funzionali documentati e superati, salvo problemi dichiarati.
 - [ ] Tre misurazioni di indicizzazione registrate sullo stesso corpus e sintetizzate.
 - [ ] Relazione completata con URL GitHub e dati realmente osservati.

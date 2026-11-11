@@ -1,8 +1,9 @@
 # tests/
 
-Contiene i test automatici del bootstrap e dell'integrità dei dati M1. Le
-verifiche controllano conteggi, UTF-8, caso non valido, manifest, dimensioni,
-SHA-256, revisioni congelate e riferimenti dell'oracolo.
+Contiene i test automatici del bootstrap, dei dati, dell'indicizzazione e della
+ricerca. Le verifiche controllano conteggi, UTF-8, caso non valido, manifest,
+dimensioni, SHA-256, revisioni congelate e riferimenti dell'oracolo.
 
-I test di indicizzazione e il confronto fra risultati osservati e attesi
-saranno aggiunti nelle milestone tecniche successive.
+Le 13 query preparate in M1 vengono eseguite sul corpus sintetico e confrontate
+con l'intero insieme atteso. I test CLI coprono costruzione indice, sessione
+interattiva, `help`, `exit`, EOF e recupero dagli errori di sintassi.
