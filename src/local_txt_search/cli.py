@@ -8,7 +8,7 @@ from collections.abc import Sequence
 
 _NOT_IMPLEMENTED = (
     "Il comando '{command}' non è ancora disponibile: "
-    "sarà implementato nelle milestone M2/M3."
+    "sarà implementato nella milestone M3."
 )
 
 
@@ -18,15 +18,15 @@ def build_parser() -> argparse.ArgumentParser:
         prog="python -m local_txt_search",
         description="Ricerca locale in file .txt basata su Whoosh.",
         epilog=(
-            "M0 fornisce soltanto il bootstrap del progetto; "
-            "i comandi index e search saranno implementati nelle milestone M2/M3."
+            "M2 fornisce l'API Python di indicizzazione; "
+            "i comandi index e search saranno implementati nella milestone M3."
         ),
     )
     subparsers = parser.add_subparsers(dest="command", metavar="{index,search}")
 
     subparsers.add_parser(
         "index",
-        help="Indicizzazione pianificata per M2 (non ancora disponibile).",
+        help="Comando di indicizzazione pianificato per M3 (non ancora disponibile).",
     )
     subparsers.add_parser(
         "search",

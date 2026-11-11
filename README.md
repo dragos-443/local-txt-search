@@ -2,10 +2,10 @@
 
 Progetto per l'**Homework 3 — Ingegneria dei dati (A.A. 2026/27)**.
 
-**Stato:** M0 e M1 completate. Il package Python è installabile, la CLI minima è
-avviabile e i corpus con l'oracolo delle query sono verificati. Indicizzazione,
-ricerca, risultati osservati e report conclusivo saranno realizzati nelle
-milestone successive.
+**Stato:** M0, M1 e M2 completate. Il package Python è installabile, i corpus e
+l'oracolo sono verificati e la costruzione persistente dell'indice è disponibile
+come API Python. Parser, CLI applicativa, risultati osservati e report conclusivo
+saranno realizzati nelle milestone successive.
 
 ## Obiettivo
 
@@ -38,10 +38,26 @@ python -m local_txt_search --help
 python -m pytest
 ```
 
-La guida elenca `index` e `search`, ma in M0 entrambi sono segnaposto espliciti.
-La suite include anche una prova di compatibilità che crea su disco un indice
-Whoosh, inserisce un documento e lo ritrova con una query. L'implementazione dei
-comandi appartiene rispettivamente a M2 e M3.
+La guida elenca `index` e `search`, che restano segnaposto fino a M3. La suite
+verifica sia la compatibilità di Whoosh sia la costruzione completa dell'indice
+sui corpus di prova.
+
+## API di indicizzazione
+
+M2 espone la ricostruzione completa tramite Python:
+
+```python
+from pathlib import Path
+
+from local_txt_search import rebuild_index
+
+stats = rebuild_index(Path("datasets/real"), Path(".local_index"))
+print(stats)
+```
+
+La funzione scansiona ricorsivamente i `.txt`, salta e registra i file non
+leggibili come UTF-8 e pubblica il nuovo indice soltanto dopo averlo verificato.
+Un eventuale indice precedente viene conservato se la ricostruzione fallisce.
 
 ## Documentazione
 
@@ -63,7 +79,7 @@ Il corso richiede una relazione con URL della repository, motivazioni degli anal
   inglesi) derivati da revisioni Wikipedia dichiarate nel manifest.
 - Il corpus sintetico comprende 12 documenti validi, una fixture non UTF-8 e
   13 query con insiemi completi di risultati attesi.
-- I comandi applicativi descritti nel PRD sono ancora una specifica futura. La
-  CLI di M0 ne segnala esplicitamente la mancata implementazione.
+- I comandi applicativi descritti nel PRD saranno collegati all'API in M3. La
+  CLI ne segnala esplicitamente la mancata implementazione.
 - Il repository Git è locale; pubblicazione e verifica del collegamento GitHub
   sono previste in M7.

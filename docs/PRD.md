@@ -2,7 +2,7 @@
 
 **Progetto:** `local-txt-search`  
 **Corso:** Ingegneria dei dati — Homework 3 (individuale), 2026/2027  
-**Stato:** M0–M1 completate; indicizzazione e ricerca da implementare
+**Stato:** M0–M2 completate; parser, CLI applicativa e ricerca da implementare
 **Ultima revisione:** 11 novembre 2026
 
 ## 1. Problema

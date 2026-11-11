@@ -19,7 +19,8 @@ def test_help_describes_planned_commands() -> None:
     assert result.returncode == 0
     assert "index" in result.stdout
     assert "search" in result.stdout
-    assert "non ancora disponibile" in result.stdout
+    assert "non ancora" in result.stdout
+    assert "disponibile" in result.stdout
 
 
 def test_planned_command_fails_clearly() -> None:
@@ -27,4 +28,4 @@ def test_planned_command_fails_clearly() -> None:
 
     assert result.returncode == 2
     assert "non è ancora disponibile" in result.stderr
-    assert "M2/M3" in result.stderr
+    assert "M3" in result.stderr

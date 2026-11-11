@@ -1,7 +1,7 @@
 # ROADMAP — Dal progetto alla consegna
 
-**Stato del progetto:** M0 e M1 completate; bootstrap installabile, corpus e
-oracolo disponibili. I comandi applicativi iniziano con M2.
+**Stato del progetto:** M0, M1 e M2 completate; bootstrap, corpus, oracolo e
+costruzione persistente dell'indice disponibili. Parser e CLI iniziano con M3.
 **Scadenza del corso:** 13 novembre 2026, ore 18:00.
 
 ## Dipendenze
@@ -21,7 +21,7 @@ M0 Fondazioni
 |---|---|---|---|---|
 | **M0** | Definire architettura, scope e bootstrap | Package installabile, CLI minima, README, PRD, roadmap, piano sperimentale | Installazione e verifiche riproducibili | **Completata** |
 | **M1** | Preparare corpus e casi attesi | Corpus sintetico, corpus pubblico, manifest, matrice query | Dataset e attesi verificati | **Completata** |
-| **M2** | Implementare la costruzione indice | Scanner, reader, analyzer, schema, index writer | Scansione e indice persistente funzionanti | Da fare |
+| **M2** | Implementare la costruzione indice | Scanner, reader, analyzer, schema, index writer | Scansione e indice persistente funzionanti | **Completata** |
 | **M3** | Implementare ricerca e CLI | Parser validato, comandi `index` e `search` | Query base, AND e phrase disponibili | Da fare |
 | **M4** | Verificare correttezza | Test automatici, error handling | Query e casi limite conformi agli attesi | Da fare |
 | **M5** | Misurare le prestazioni | Esecuzioni ripetute, risultati grezzi | Conteggi e tempi reali archiviati | Da fare |
@@ -53,7 +53,7 @@ introduzioni Wikipedia IT/EN con revisioni e hash congelati, e 13 query con
 insiemi attesi indipendenti dal motore. I controlli automatici verificano
 conteggi, codifica, manifest e riferimenti dell'oracolo.
 
-## M2 — Indicizzazione [da fare]
+## M2 — Indicizzazione [completata]
 
 - Implementare scansione ricorsiva e identificazione mediante percorso relativo.
 - Leggere file UTF-8 / UTF-8 BOM; saltare con log i file non validi.
@@ -62,6 +62,12 @@ conteggi, codifica, manifest e riferimenti dell'oracolo.
 - Conteggiare file individuati, indicizzati e saltati; misurare tempo end-to-end.
 
 **Gate:** l'indice può essere riaperto e usato senza rileggere i documenti.
+
+**Gate superato:** la scansione deterministica gestisce ricorsione, percorsi
+relativi, UTF-8/BOM, scarti e symlink; lo schema mantiene analyzer distinti e
+posizioni. La ricostruzione verifica il nuovo indice prima della pubblicazione e
+ripristina quello precedente se la sostituzione fallisce. I test riaprono e
+interrogano l'indice persistente anche dopo la rimozione della sorgente.
 
 ## M3 — Parser e CLI [da fare]
 
