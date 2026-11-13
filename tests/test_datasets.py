@@ -22,12 +22,14 @@ def load_manifest() -> list[dict[str, str]]:
 def test_real_corpus_matches_manifest() -> None:
     rows = load_manifest()
 
-    assert len(rows) == 50
-    assert Counter(row["language"] for row in rows) == {"it": 25, "en": 25}
+    assert len(rows) == 200
+    assert Counter(row["language"] for row in rows) == {"it": 100, "en": 100}
     assert Counter(row["pair_id"] for row in rows) == {
-        f"{number:02d}": 2 for number in range(1, 26)
+        f"{number:02d}": 2 for number in range(1, 101)
     }
-    assert len({row["path"] for row in rows}) == 50
+    assert len({row["path"] for row in rows}) == 200
+    assert len({row["sha256"] for row in rows}) == 200
+    assert len({(row["language"], row["page_id"]) for row in rows}) == 200
 
     declared_paths = {row["path"] for row in rows}
     actual_paths = {
@@ -54,7 +56,7 @@ def test_manifest_matches_pinned_sources() -> None:
     ]
     rows_by_path = {row["path"]: row for row in load_manifest()}
 
-    assert len(pairs) == 25
+    assert len(pairs) == 100
     for pair in pairs:
         for language in ("it", "en"):
             source = pair[language]
@@ -64,6 +66,19 @@ def test_manifest_matches_pinned_sources() -> None:
             assert row["title"] == source["title"]
             assert int(row["page_id"]) == source["page_id"]
             assert int(row["revision_id"]) == source["revision_id"]
+
+
+def test_initial_50_are_unchanged() -> None:
+    reference = json.loads((REAL_DIR / "initial_50.json").read_text(encoding="utf-8"))["entries"]
+    rows_by_path = {row["path"]: row for row in load_manifest()}
+    assert len(reference) == 50
+    assert len({entry["path"] for entry in reference}) == 50
+    for entry in reference:
+        row = rows_by_path[entry["path"]]
+        assert int(row["pair_id"]) <= 25
+        assert int(row["revision_id"]) == entry["revision_id"]
+        assert row["sha256"] == entry["sha256"]
+        assert hashlib.sha256((REAL_DIR / entry["path"]).read_bytes()).hexdigest() == entry["sha256"]
 
 
 def test_synthetic_corpus_shape_and_encoding_cases() -> None:

@@ -1,0 +1,3 @@
+Il riconoscimento vocale è il processo mediante il quale il linguaggio orale umano viene riconosciuto e successivamente elaborato attraverso un computer o più specificatamente attraverso un apposito sistema di riconoscimento vocale.
+
+Sistemi di riconoscimento vocale vengono utilizzati per applicazioni vocali automatizzate nel contesto delle applicazioni telefoniche, ad esempio call center automatici, per sistemi di dettatura (in inglese dictation system), che consentono di dettare discorsi al computer, oppure per sistemi di controllo del sistema di navigazione satellitare o del telefono in auto tramite comandi vocali.

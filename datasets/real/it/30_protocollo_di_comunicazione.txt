@@ -1,0 +1,1 @@
+Un protocollo di comunicazione, in informatica, è un insieme di regole formalmente descritte che definiscono le modalità di comunicazione tra due o più entità. Ogni protocollo è progettato con precisi compiti e finalità, a seconda delle entità interessate e del mezzo di comunicazione. Se le due entità sono remote, si parla di protocollo di rete .

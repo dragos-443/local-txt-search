@@ -1,0 +1,5 @@
+La termodinamica è la branca della fisica classica che studia le trasformazioni termodinamiche indotte da calore e lavoro in un sistema termodinamico, determinanti cambiamenti delle variabili di stato temperatura ed energia.
+
+La termodinamica classica si basa sul concetto di sistema macroscopico, ovvero una porzione di massa fisicamente o concettualmente separata dall'ambiente esterno, che spesso per comodità si assume non perturbato dallo scambio di energia con il sistema (sistema isolato). Lo stato di un sistema macroscopico che si trova in condizione di equilibrio è specificato da grandezze dette variabili termodinamiche o funzioni di stato come temperatura, pressione, volume e composizione chimica.
+
+La termodinamica del non equilibrio è una specializzazione della termodinamica che studia i processi termodinamici caratterizzati dal mancato raggiungimento di condizioni di equilibrio stabile. La termodinamica computazionale è una branca della fisica computazionale che unisce la termodinamica a algoritmi informatici che permettono lo svolgimento di calcoli e predizioni. La termodinamica computazionale viene pesantemente utilizzata in ingegneria dei materiali.

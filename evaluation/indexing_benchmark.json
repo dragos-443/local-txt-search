@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "measured_at_utc": "2026-11-13T15:50:22.076423+00:00",
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "whoosh": "2.7.4",
+    "os": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "machine": "AMD64",
+    "cpu_count": 8,
+    "commit": "bf3d984fdf079f9734ebc18ff64748cc40733a37",
+    "dirty": true
+  },
+  "inputs": {
+    "initial_reference_sha256": "7316d7cf269fe7fad64f7abbb2d646ac97f1d88d1781c4c74d87cf3a41b304d7",
+    "manifest_sha256": "00b52844a9a062ed9f193c504f5d227b26e79aebf7674effa53b4dcf2b382802",
+    "indexing_code_sha256": "131dcec7973ee0fc77b88d5d4d7b17a1cc4e0c3e7cd01cd12c17cfea549ccd97"
+  },
+  "method": "50 file copiati prima delle misure; run alternati 50/200; indice nuovo per ogni prova; durata end-to-end di rebuild_index, esclusa la copia del sottoinsieme.",
+  "runs": [
+    {
+      "corpus_files": 50,
+      "trial": 1,
+      "duration_seconds": 1.4231237000785768,
+      "source_bytes": 90207,
+      "discovered_files": 50,
+      "indexed_files": 50,
+      "skipped_files": 0,
+      "skips": [],
+      "index_bytes": 888815
+    },
+    {
+      "corpus_files": 200,
+      "trial": 1,
+      "duration_seconds": 3.492429200094193,
+      "source_bytes": 334249,
+      "discovered_files": 200,
+      "indexed_files": 200,
+      "skipped_files": 0,
+      "skips": [],
+      "index_bytes": 2240926
+    },
+    {
+      "corpus_files": 50,
+      "trial": 2,
+      "duration_seconds": 1.0987193998880684,
+      "source_bytes": 90207,
+      "discovered_files": 50,
+      "indexed_files": 50,
+      "skipped_files": 0,
+      "skips": [],
+      "index_bytes": 888815
+    },
+    {
+      "corpus_files": 200,
+      "trial": 2,
+      "duration_seconds": 1.5310933999717236,
+      "source_bytes": 334249,
+      "discovered_files": 200,
+      "indexed_files": 200,
+      "skipped_files": 0,
+      "skips": [],
+      "index_bytes": 2240926
+    },
+    {
+      "corpus_files": 50,
+      "trial": 3,
+      "duration_seconds": 0.46541810035705566,
+      "source_bytes": 90207,
+      "discovered_files": 50,
+      "indexed_files": 50,
+      "skipped_files": 0,
+      "skips": [],
+      "index_bytes": 888815
+    },
+    {
+      "corpus_files": 200,
+      "trial": 3,
+      "duration_seconds": 0.8549279998987913,
+      "source_bytes": 334249,
+      "discovered_files": 200,
+      "indexed_files": 200,
+      "skipped_files": 0,
+      "skips": [],
+      "index_bytes": 2240926
+    }
+  ],
+  "median_seconds": {
+    "50": 1.0987193998880684,
+    "200": 1.5310933999717236
+  }
+}

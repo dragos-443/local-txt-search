@@ -2,8 +2,8 @@
 
 **Progetto:** `local-txt-search`  
 **Corso:** Ingegneria dei dati — Homework 3 (individuale), 2026/2027  
-**Stato:** M0–M4 completate; indicizzazione, ricerca CLI e verifica funzionale disponibili
-**Ultima revisione:** 11 novembre 2026
+**Stato:** M0–M5 completate; indicizzazione, ricerca CLI e valutazione sperimentale disponibili
+**Ultima revisione:** 13 novembre 2026
 
 ## 1. Problema
 
@@ -94,12 +94,13 @@ contenuto "<frase>"                    # adiacenza e ordine
 - **Corpus A (sintetico):** 12 documenti costruiti a mano e un caso di errore
   di codifica separato; include testo IT/EN, accenti, underscore, trattini, file
   omonimi, frasi e file vuoti.
-- **Corpus B (reale):** 50 introduzioni Wikipedia `.txt` (25 IT + 25 EN) con
+- **Corpus B (reale):** 200 introduzioni Wikipedia `.txt` (100 IT + 100 EN) con
   revisioni congelate; fonte, licenza, trasformazioni, percorso, bytes e hash
-  SHA-256 sono registrati nel manifest.
-- Le 13 query e gli insiemi attesi sono in `evaluation/queries.json`; gli
-  insiemi osservati in M4 sono in `evaluation/functional_results.json`. Le
-  misure di indicizzazione saranno raccolte in M5.
+  SHA-256 sono registrati nel manifest. I primi 50 file restano identificati
+  separatamente per la valutazione di ricerca e il confronto dei tempi.
+- Le 13 query e gli insiemi attesi sintetici sono in `evaluation/queries.json`;
+  gli esiti M4 sono in `evaluation/functional_results.json`. Query, giudizi e
+  risultati reali M5 e le sei misure sono in file separati in `evaluation/`.
 
 ## 8. Qualità, verificabilità e limiti
 
@@ -117,7 +118,7 @@ contenuto "<frase>"                    # adiacenza e ordine
 - [x] Query semplici, AND e per frase restituiscono l'insieme corretto di documenti.
 - [x] File non UTF-8 vengono saltati e segnalati.
 - [x] Test funzionali documentati e superati, salvo problemi dichiarati.
-- [ ] Tre misurazioni di indicizzazione registrate sullo stesso corpus e sintetizzate.
+- [x] Tre misurazioni sui 50 file e tre sui 200, con mediane e dati grezzi registrati.
 - [ ] Relazione completata con URL GitHub e dati realmente osservati.
 
 ## 10. Vincoli temporali

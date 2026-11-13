@@ -1,0 +1,3 @@
+L'Internet delle cose (IdC), dall'inglese internet of things (IoT), è un neologismo utilizzato nel mondo delle telecomunicazioni e dell'informatica che fa riferimento all'estensione di internet al mondo degli oggetti e dei luoghi concreti, che così acquisiscono una propria identità digitale in modo da poter comunicare con altri oggetti nella rete stessa.
+
+Un'evoluzione significativa dell'IoT è rappresentata dal cosiddetto Web of Things (WoT), un insieme di standard sviluppati dal World Wide Web Consortium (W3C) che si basano sulle tecnologie tradizionali del Web (HTTP, URL, JSON, WebSockets, ecc.).

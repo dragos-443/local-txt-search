@@ -1,8 +1,8 @@
 """Prepare the pinned bilingual Wikipedia corpus used by the project.
 
-Run with ``--update-revisions`` only when intentionally selecting newer page
-revisions.  A normal run rebuilds every text file from the revision IDs stored
-in ``datasets/real/sources.json``.
+Use ``--append-new-pairs`` once to select 75 additional bilingual pairs from
+``datasets/real/candidates.json``. A normal run checks the frozen first 50
+files and rebuilds the additional files from their pinned revisions.
 """
 
 from __future__ import annotations
@@ -26,41 +26,15 @@ ROOT = Path(__file__).resolve().parents[1]
 REAL_DIR = ROOT / "datasets" / "real"
 SOURCES_PATH = REAL_DIR / "sources.json"
 MANIFEST_PATH = REAL_DIR / "manifest.csv"
+INITIAL_PATH = REAL_DIR / "initial_50.json"
+CANDIDATES_PATH = REAL_DIR / "candidates.json"
+SELECTION_PATH = REAL_DIR / "selection.json"
 LICENSE = "CC BY-SA 4.0"
 TRANSFORMATION = (
     "HTML introduttivo prima della prima sezione; elementi non testuali rimossi; "
     "spazi normalizzati; Unicode NFC; UTF-8"
 )
 USER_AGENT = "local-txt-search/0.1 (academic corpus preparation)"
-
-ITALIAN_TITLES = [
-    "Informatica",
-    "Banca dati",
-    "Motore di ricerca",
-    "Algoritmo",
-    "Internet",
-    "World Wide Web",
-    "Intelligenza artificiale",
-    "Apprendimento automatico",
-    "Elaborazione del linguaggio naturale",
-    "Statistica",
-    "Probabilità",
-    "Matematica",
-    "Fisica",
-    "Chimica",
-    "Biologia",
-    "Astronomia",
-    "Terra",
-    "Energia",
-    "Ecologia",
-    "Clima",
-    "Cambiamento climatico",
-    "Mobilità sostenibile",
-    "Trasporto pubblico",
-    "Città",
-    "Robotica",
-]
-
 
 class LeadParagraphParser(HTMLParser):
     """Collect top-level prose paragraphs before the first section heading."""
@@ -213,45 +187,65 @@ def current_pages(
     return result
 
 
-def update_sources() -> list[dict[str, Any]]:
-    previous_paths: dict[tuple[str, str], str] = {}
-    if SOURCES_PATH.exists():
-        for pair in read_sources():
-            for language in ("it", "en"):
-                source = pair[language]
-                previous_paths[(pair["pair_id"], language)] = source["path"]
-
-    italian_pages = current_pages("it", ITALIAN_TITLES, include_english_links=True)
-    english_titles = [
-        italian_pages[title]["langlinks"][0]["title"] for title in ITALIAN_TITLES
-    ]
-    english_pages = current_pages("en", english_titles, include_english_links=False)
-
-    pairs: list[dict[str, Any]] = []
-    for position, requested_title in enumerate(ITALIAN_TITLES, start=1):
-        pair_id = f"{position:02d}"
-        italian = italian_pages[requested_title]
-        english_title = italian["langlinks"][0]["title"]
-        english = english_pages[english_title]
-        pair: dict[str, Any] = {"pair_id": pair_id}
-        for language, page in (("it", italian), ("en", english)):
-            path = previous_paths.get(
-                (pair_id, language),
-                f"{language}/{pair_id}_{slugify(page['title'])}.txt",
-            )
-            pair[language] = {
-                "path": path,
-                "title": page["title"],
-                "page_id": page["pageid"],
-                "revision_id": page["revisions"][0]["revid"],
-            }
-        pairs.append(pair)
-
-    SOURCES_PATH.write_text(
-        json.dumps({"pairs": pairs}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    return pairs
+def select_new_pairs(
+    existing: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], dict[str, bytes], list[dict[str, str]]]:
+    """Select exactly 15 valid pairs per thematic group, in candidate order."""
+    groups = json.loads(CANDIDATES_PATH.read_text(encoding="utf-8"))["groups"]
+    if len(groups) != 5:
+        raise ValueError("Servono esattamente cinque gruppi di candidati")
+    seen_ids = {
+        language: {pair[language]["page_id"] for pair in existing}
+        for language in ("it", "en")
+    }
+    seen_hashes = {
+        row["sha256"] for row in read_manifest()
+    }
+    pairs = list(existing)
+    payloads: dict[str, bytes] = {}
+    decisions: list[dict[str, str]] = []
+    for group in groups:
+        accepted = 0
+        for title in group["titles"]:
+            if accepted == 15:
+                decisions.append({"group": group["name"], "title": title, "outcome": "not_needed"})
+                continue
+            try:
+                italian = current_pages("it", [title], True)[title]
+                english_title = italian["langlinks"][0]["title"]
+                english = current_pages("en", [english_title], False)[english_title]
+                if italian["pageid"] in seen_ids["it"] or english["pageid"] in seen_ids["en"]:
+                    raise ValueError("pagina già presente nel corpus")
+                new_payloads = {
+                    "it": extract_lead("it", italian["revisions"][0]["revid"]).encode("utf-8"),
+                    "en": extract_lead("en", english["revisions"][0]["revid"]).encode("utf-8"),
+                }
+                hashes = {hashlib.sha256(data).hexdigest() for data in new_payloads.values()}
+                if len(hashes) != 2 or hashes & seen_hashes:
+                    raise ValueError("contenuto duplicato")
+                pair_id = f"{len(pairs) + 1:02d}"
+                pair: dict[str, Any] = {"pair_id": pair_id, "selection_group": group["name"]}
+                for language, page in (("it", italian), ("en", english)):
+                    path = f"{language}/{pair_id}_{slugify(page['title'])}.txt"
+                    pair[language] = {
+                        "path": path,
+                        "title": page["title"],
+                        "page_id": page["pageid"],
+                        "revision_id": page["revisions"][0]["revid"],
+                    }
+                    payloads[path] = new_payloads[language]
+                    seen_ids[language].add(page["pageid"])
+                seen_hashes.update(hashes)
+                pairs.append(pair)
+                accepted += 1
+                decisions.append({"group": group["name"], "title": title, "outcome": "accepted", "pair_id": pair_id})
+                print(f"{pair_id}/100 {title} / {english['title']}", flush=True)
+            except (ValueError, KeyError, urllib.error.HTTPError) as error:
+                decisions.append({"group": group["name"], "title": title, "outcome": "rejected", "reason": str(error)})
+                print(f"Scartata {title}: {error}", flush=True)
+        if accepted != 15:
+            raise ValueError(f"Gruppo {group['name']}: {accepted} coppie valide, ne servono 15")
+    return pairs, payloads, decisions
 
 
 def read_sources() -> list[dict[str, Any]]:
@@ -259,12 +253,26 @@ def read_sources() -> list[dict[str, Any]]:
         document = json.loads(SOURCES_PATH.read_text(encoding="utf-8"))
     except FileNotFoundError as error:
         raise SystemExit(
-            f"{SOURCES_PATH} non esiste: eseguire prima con --update-revisions"
+            f"{SOURCES_PATH} non esiste"
         ) from error
     pairs = document.get("pairs")
-    if not isinstance(pairs, list) or len(pairs) != 25:
-        raise ValueError("sources.json deve contenere esattamente 25 coppie")
+    if not isinstance(pairs, list) or len(pairs) not in (25, 100):
+        raise ValueError("sources.json deve contenere 25 o 100 coppie")
+    if [pair["pair_id"] for pair in pairs] != [f"{n:02d}" for n in range(1, len(pairs) + 1)]:
+        raise ValueError("ID delle coppie non consecutivi")
     return pairs
+
+
+def read_manifest() -> list[dict[str, str]]:
+    with MANIFEST_PATH.open(encoding="utf-8", newline="") as stream:
+        return list(csv.DictReader(stream))
+
+
+def initial_entries() -> dict[str, dict[str, Any]]:
+    entries = json.loads(INITIAL_PATH.read_text(encoding="utf-8"))["entries"]
+    if len(entries) != 50:
+        raise ValueError("Il riferimento iniziale deve contenere 50 file")
+    return {entry["path"]: entry for entry in entries}
 
 
 def extract_lead(language: str, revision_id: int) -> str:
@@ -280,9 +288,15 @@ def permanent_url(language: str, revision_id: int) -> str:
     return f"https://{language}.wikipedia.org/w/index.php?oldid={revision_id}"
 
 
-def generate(pairs: list[dict[str, Any]]) -> None:
+def generate(pairs: list[dict[str, Any]], preloaded: dict[str, bytes] | None = None) -> None:
+    preloaded = preloaded or {}
+    frozen = initial_entries()
+    previous_manifest = {row["path"]: row for row in read_manifest()}
+    if len(pairs) != 100:
+        raise ValueError("Il corpus finale deve contenere 100 coppie")
     generated: list[tuple[dict[str, str | int], bytes]] = []
     expected_paths: set[str] = set()
+    seen_hashes: set[str] = set()
     for pair in pairs:
         for language in ("it", "en"):
             source = pair[language]
@@ -290,8 +304,30 @@ def generate(pairs: list[dict[str, Any]]) -> None:
             if relative_path in expected_paths:
                 raise ValueError(f"Percorso duplicato: {relative_path}")
             expected_paths.add(relative_path)
-            text = extract_lead(language, source["revision_id"])
-            payload = text.encode("utf-8")
+            if relative_path in frozen:
+                reference = frozen[relative_path]
+                if reference["revision_id"] != source["revision_id"]:
+                    raise ValueError(f"Revisione iniziale modificata: {relative_path}")
+                payload = (REAL_DIR / relative_path).read_bytes()
+                if hashlib.sha256(payload).hexdigest() != reference["sha256"]:
+                    raise ValueError(f"File iniziale modificato: {relative_path}")
+            else:
+                payload = preloaded.get(relative_path)
+                if payload is None:
+                    payload = extract_lead(language, source["revision_id"]).encode("utf-8")
+            if not payload.decode("utf-8").strip():
+                raise ValueError(f"Testo vuoto: {relative_path}")
+            digest = hashlib.sha256(payload).hexdigest()
+            previous = previous_manifest.get(relative_path)
+            if previous is not None and (previous["sha256"] != digest or int(previous["revision_id"]) != source["revision_id"]):
+                raise ValueError(f"La revisione fissata non riproduce i byte archiviati: {relative_path}")
+            if previous is not None and (REAL_DIR / relative_path).exists():
+                actual_digest = hashlib.sha256((REAL_DIR / relative_path).read_bytes()).hexdigest()
+                if actual_digest != previous["sha256"]:
+                    raise ValueError(f"File esistente modificato: {relative_path}")
+            if digest in seen_hashes:
+                raise ValueError(f"Contenuto duplicato: {relative_path}")
+            seen_hashes.add(digest)
             row: dict[str, str | int] = {
                 "path": relative_path,
                 "language": language,
@@ -303,7 +339,7 @@ def generate(pairs: list[dict[str, Any]]) -> None:
                 "license": LICENSE,
                 "transformation": TRANSFORMATION,
                 "bytes": len(payload),
-                "sha256": hashlib.sha256(payload).hexdigest(),
+                "sha256": digest,
             }
             generated.append((row, payload))
 
@@ -316,10 +352,14 @@ def generate(pairs: list[dict[str, Any]]) -> None:
     if stale:
         raise ValueError(f"File reali non registrati da rimuovere manualmente: {sorted(stale)}")
 
+    if len(expected_paths) != 200 or len(frozen.keys() & expected_paths) != 50:
+        raise ValueError("Conteggi o riferimenti iniziali non validi")
+
     for row, payload in generated:
         destination = REAL_DIR / str(row["path"])
         destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_bytes(payload)
+        if str(row["path"]) not in frozen:
+            destination.write_bytes(payload)
 
     fieldnames = [
         "path",
@@ -343,13 +383,22 @@ def generate(pairs: list[dict[str, Any]]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--update-revisions",
+        "--append-new-pairs",
         action="store_true",
-        help="seleziona le revisioni correnti e aggiorna esplicitamente sources.json",
+        help="seleziona 75 coppie nuove dai candidati e congela le loro revisioni",
     )
     arguments = parser.parse_args()
-    pairs = update_sources() if arguments.update_revisions else read_sources()
-    generate(pairs)
+    existing = read_sources()
+    if arguments.append_new_pairs:
+        if len(existing) != 25:
+            raise ValueError("L'aggiunta richiede il corpus iniziale di 25 coppie")
+        pairs, payloads, decisions = select_new_pairs(existing)
+        generate(pairs, payloads)
+        SOURCES_PATH.write_bytes((json.dumps({"pairs": pairs}, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+        SELECTION_PATH.write_bytes((json.dumps({"decisions": decisions}, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+    else:
+        generate(existing)
+        pairs = existing
     print(f"Corpus generato: {len(pairs) * 2} file; manifest: {MANIFEST_PATH}")
 
 

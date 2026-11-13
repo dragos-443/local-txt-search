@@ -1,0 +1,12 @@
+[
+  {"id": "R01", "query": "nome informatica", "field": "filename", "mode": "all_terms", "terms": ["informatica"]},
+  {"id": "R02", "query": "nome \"base di dati\"", "field": "filename", "mode": "phrase", "terms": ["base", "di", "dati"]},
+  {"id": "R03", "query": "nome machine learning", "field": "filename", "mode": "all_terms", "terms": ["machine", "learning"]},
+  {"id": "R04", "query": "nome \"public transport\"", "field": "filename", "mode": "phrase", "terms": ["public", "transport"]},
+  {"id": "R05", "query": "nome climate change", "field": "filename", "mode": "all_terms", "terms": ["climate", "change"]},
+  {"id": "R06", "query": "contenuto algoritmo", "field": "content", "mode": "all_terms", "terms": ["algoritmo"]},
+  {"id": "R07", "query": "contenuto \"intelligenza artificiale\"", "field": "content", "mode": "phrase", "terms": ["intelligenza", "artificiale"]},
+  {"id": "R08", "query": "contenuto machine learning", "field": "content", "mode": "all_terms", "terms": ["machine", "learning"]},
+  {"id": "R09", "query": "contenuto \"climate change\"", "field": "content", "mode": "phrase", "terms": ["climate", "change"]},
+  {"id": "R10", "query": "contenuto energia", "field": "content", "mode": "all_terms", "terms": ["energia"]}
+]

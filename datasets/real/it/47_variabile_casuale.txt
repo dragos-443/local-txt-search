@@ -1,0 +1,9 @@
+In matematica, e in particolare nella teoria della probabilità, una variabile casuale (detta anche variabile aleatoria o variabile stocastica) è una formalizzazione matematica di una quantità o di un oggetto che dipende da eventi casuali.
+
+Il termine, tuttavia, non deve confondere. Non si tratta né di una variabile né di un insieme casuale di elementi, bensì di una funzione matematica con caratteristiche proprie:
+
+Il grafico mostra come una variabile casuale sia una funzione da tutti i possibili esiti a valori reali. Mostra inoltre come una variabile casuale venga utilizzata per definire le funzioni di massa di probabilità.
+
+Il termine «aleatorio» deriva dal latino alea (gioco di dadi) ed esprime il concetto di rischio calcolato. La denominazione alternativa stocastico è stata introdotta da Bruno de Finetti. Il termine «casuale» deriva dal latino casualis.
+
+Nel linguaggio matematico formale della teoria della misura, una variabile casuale è definita come una funzione misurabile da uno spazio con misura di probabilità (chiamato spazio campionario) a uno spazio misurabile. Questo permette di considerare la misura immagine (o pushforward), che prende il nome di distribuzione di variabile casuale; la distribuzione è quindi una misura di probabilità sull'insieme di tutti i possibili valori della variabile casuale. È possibile che due variabili casuali abbiano distribuzioni identiche ma differiscano in modo significativo; per esempio, potrebbero essere indipendenti tra loro.

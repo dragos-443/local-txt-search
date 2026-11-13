@@ -1,0 +1,25 @@
+{
+  "selection_rule": "Primi 15 candidati validi per gruppo, nell'ordine elencato; voce IT con collegamento EN, introduzioni non vuote e pagine distinte dal corpus iniziale.",
+  "groups": [
+    {
+      "name": "informatica e dati",
+      "titles": ["Programmazione (informatica)", "Linguaggio di programmazione", "Sistema operativo", "Rete di computer", "Protocollo di comunicazione", "Sicurezza informatica", "Crittografia", "Ingegneria del software", "Struttura dati", "Complessità computazionale", "Big data", "Data mining", "Cloud computing", "Internet delle cose", "Database relazionale", "Software libero", "Interfaccia di programmazione delle applicazioni"]
+    },
+    {
+      "name": "matematica e statistica",
+      "titles": ["Algebra", "Geometria", "Analisi matematica", "Calcolo infinitesimale", "Teoria della probabilità", "Inferenza statistica", "Distribuzione di probabilità", "Variabile casuale", "Campionamento (statistica)", "Regressione lineare", "Teorema di Bayes", "Ottimizzazione (matematica)", "Teoria dei grafi", "Logica matematica", "Matematica applicata", "Equazione differenziale", "Statistica descrittiva", "Serie matematica"]
+    },
+    {
+      "name": "scienze naturali",
+      "titles": ["Genetica", "Evoluzione", "DNA", "Cellula", "Ecosistema", "Biodiversità", "Oceano", "Atmosfera terrestre", "Sistema solare", "Stella", "Galassia", "Molecola", "Atomo", "Reazione chimica", "Termodinamica", "Microbiologia", "Geologia", "Vulcano"]
+    },
+    {
+      "name": "ambiente ed energia",
+      "titles": ["Energia rinnovabile", "Energia solare", "Energia eolica", "Energia idroelettrica", "Combustibile fossile", "Riscaldamento globale", "Gas serra", "Diossido di carbonio", "Inquinamento atmosferico", "Sostenibilità", "Sviluppo sostenibile", "Riciclaggio dei rifiuti", "Deforestazione", "Agricoltura sostenibile", "Impronta ecologica", "Economia circolare", "Efficienza energetica", "Energia geotermica", "Conservazione della natura"]
+    },
+    {
+      "name": "mobilità e robotica",
+      "titles": ["Automobile elettrica", "Bicicletta", "Ferrovia", "Metropolitana", "Tram", "Mobilità urbana", "Pianificazione urbana", "Città intelligente", "Veicolo autonomo", "Robot", "Rete neurale artificiale", "Apprendimento profondo", "Visione artificiale", "Riconoscimento vocale", "Sistema di raccomandazione", "Apprendimento per rinforzo", "Elaborazione delle immagini", "Sensore", "Navigazione autonoma"]
+    }
+  ]
+}

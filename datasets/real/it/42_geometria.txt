@@ -1,0 +1,7 @@
+La geometria (dal latino geometrĭa e questo dal greco antico γεωμετρία, composto dal prefisso geo- che rimanda alla parola greca γή = 'terra', 'terreno', e μετρία, metria, 'misura', quindi 'misurazione della Terra') è quella parte della matematica che si occupa delle forme nel piano e nello spazio, e delle loro mutue relazioni.
+
+In epoca moderna, lo studio della geometria ha potuto estendersi a concetti più astratti attraverso lo studio delle varietà e degli schemi, ossia l'estensione a oggetti geometrici multidimensionali che non sono immersi in nessuno spazio ambiente.
+
+La differenziazione dei settori della geometria moderna spesso dipende dalla risposta alla domanda seguente:
+
+In base alla risposta scelta, è possibile distinguere diversi ambiti della geometria. Per la topologia, due forme sono identiche se puoi deformare continuamente l'una nell'altra, senza fare buchi o strappi. La topologia differenziale richiede inoltre che queste trasformazioni avvengano senza spigoli o pieghe (si richiede che le deformazioni siano sufficientemente differenziabili). Se le trasformazioni sono algebriche, si parla invece di geometria algebrica.

@@ -2,10 +2,9 @@
 
 Progetto per l'**Homework 3 — Ingegneria dei dati (A.A. 2026/27)**.
 
-**Stato:** M0–M4 completate. Il package Python è installabile, i corpus e
-l'oracolo sono verificati, la costruzione persistente dell'indice e la ricerca
-CLI sono disponibili, e i test funzionali sono documentati. Misure di
-prestazione e report conclusivo saranno realizzati nelle milestone successive.
+**Stato:** M0–M5 completate. Il package Python è installabile, la costruzione
+persistente dell'indice e la ricerca CLI sono disponibili, e i test funzionali
+sono documentati. La valutazione M5 è in `evaluation/`.
 
 ## Obiettivo
 
@@ -71,6 +70,29 @@ python scripts/evaluate_functional.py
 Il comando scrive `evaluation/functional_results.json` e restituisce un codice
 di errore se almeno un insieme di risultati non coincide con l'atteso.
 
+## Valutazione M5
+
+Il corpus reale contiene 200 introduzioni Wikipedia, 100 italiane e 100
+inglesi. `datasets/real/initial_50.json` identifica i 50 file iniziali,
+usati come sottoinsieme fisso per le dieci query reali e per le misure a 50
+file. Provenienza, licenza, trasformazione, revisioni e hash sono in
+`datasets/real/manifest.csv`; i criteri di selezione sono nel README del corpus.
+
+Per verificare i giudizi congelati, ricalcolare le metriche e ripetere le sei
+misure di indicizzazione:
+
+```powershell
+python scripts/evaluate_real.py
+python scripts/benchmark_indexing.py
+```
+
+I risultati archiviati sono `evaluation/real_judgments.json`,
+`evaluation/real_results.json` e `evaluation/indexing_benchmark.json`.
+Le mediane osservate sono 1,099 s sui 50 file e 1,531 s sui 200;
+precision, recall e F1 macro delle dieci query sono 1,000. Il riepilogo è in
+`evaluation/M5_REPORT.md`. I giudizi usano corrispondenza testuale, non
+pertinenza semantica.
+
 ## API di indicizzazione
 
 M2 espone la ricostruzione completa tramite Python:
@@ -104,7 +126,7 @@ Il corso richiede una relazione con URL della repository, motivazioni degli anal
 
 ## Note di progetto
 
-- Il corpus reale comprende **50 documenti pubblici** (25 italiani e 25
+- Il corpus reale comprende **200 documenti pubblici** (100 italiani e 100
   inglesi) derivati da revisioni Wikipedia dichiarate nel manifest.
 - Il corpus sintetico comprende 12 documenti validi, una fixture non UTF-8 e
   13 query con insiemi completi di risultati attesi.

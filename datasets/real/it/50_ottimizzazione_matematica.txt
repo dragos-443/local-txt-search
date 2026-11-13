@@ -1,0 +1,3 @@
+L'ottimizzazione (o programmazione matematica, PM) è una branca della matematica applicata che studia teoria e metodi per la ricerca dei punti di massimo e minimo di una funzione matematica all'interno di un dominio specificato.
+
+Un esempio semplice di problema di ottimizzazione consiste nel massimizzare o minimizzare una funzione reale di una variabile reale su un dato intervallo. La generalizzazione della teoria e delle tecniche di ottimizzazione ad altre formulazioni costituisce una vasta area della matematica applicata. Più in generale, l'ottimizzazione comprende la ricerca dei "migliori valori disponibili" di una certa funzione obiettivo in un determinato dominio (o input), e considera una varietà di diversi tipi di funzioni obiettivo e diversi tipi di domini.

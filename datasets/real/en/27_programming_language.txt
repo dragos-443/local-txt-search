@@ -1,0 +1,5 @@
+A programming language is a formal language designed to express computations, typically supporting the specification of software both for humans and for computers.
+
+Execution of a program requires an implementation. There are two main approaches for implementing a programming language – compilation, where programs are translated ahead-of-time to machine code, and interpretation, where programs are directly executed. In addition to these two extremes, some implementations use hybrid approaches such as just-in-time compilation and bytecode interpreters.
+
+The design of programming languages has been strongly influenced by computer architecture, with most imperative languages designed around the ubiquitous von Neumann architecture. While early programming languages were closely tied to the hardware, modern languages often hide hardware details via abstraction in an effort to enable better software with less effort. These languages are known as high-level languages.

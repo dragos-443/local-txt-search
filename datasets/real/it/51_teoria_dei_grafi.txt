@@ -1,0 +1,1 @@
+In matematica, informatica e, più in particolare, geometria combinatoria, la teoria dei grafi è la disciplina che si occupa dello studio dei grafi, oggetti discreti che permettono di schematizzare una grande varietà di situazioni e processi, e spesso di consentirne delle analisi in termini quantitativi e algoritmici.

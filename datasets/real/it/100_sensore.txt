@@ -1,0 +1,5 @@
+Il sensore è un dispositivo che si trova in diretta interazione con il sistema misurato.
+
+In ambito strettamente metrologico, riferito solamente al componente che fisicamente effettua la trasformazione della grandezza d'ingresso in un segnale di altra natura. I dispositivi in commercio spesso integrano al loro interno anche alimentatori stabilizzati, amplificatori di segnale, dispositivi di comunicazione remota, ecc. In quest'ultimo caso si preferisce definirli trasduttori.
+
+In commercio esistono dei trasduttori di pressione in cui l'elemento sensore è costituito da una membrana su cui è stato applicato un ponte estensimetrico; all'interno dello stesso dispositivo, un amplificatore porta il debole segnale del ponte ai valori di 5-10 V del segnale d'uscita finale del trasduttore.

@@ -1,0 +1,3 @@
+La statistica descrittiva è la branca della statistica che studia i criteri di rilevazione, classificazione, sintesi e rappresentazione dei dati appresi dallo studio di una popolazione o di una parte di essa (detta campione).
+
+I risultati ottenuti nell'ambito della statistica descrittiva si possono definire certi, a meno di errori di misurazione dovuti al caso, che sono in media pari a zero. Da questo punto di vista si differenzia dalla statistica inferenziale, alla quale sono associati inoltre errori di valutazione.

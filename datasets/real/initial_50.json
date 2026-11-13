@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "path": "it/01_informatica.txt",
+      "revision_id": 152973274,
+      "sha256": "6802a0a98b23a3f0467186671a84b1b4423045aef3f65433a0689b6eae84b1d1"
+    },
+    {
+      "path": "en/01_computer_science.txt",
+      "revision_id": 1380596843,
+      "sha256": "a90b436fac0885b5e41c66002669139c2fd6a10fb7ec6dda7cd3c691e100398f"
+    },
+    {
+      "path": "it/02_base_di_dati.txt",
+      "revision_id": 152291993,
+      "sha256": "d276425a2dcc01194651043f20f8ea3466a1c55e80f96a5a9c6a9e0a60b3cd85"
+    },
+    {
+      "path": "en/02_database.txt",
+      "revision_id": 1383142210,
+      "sha256": "e68402f74edd84a5f352ac8dfc5251d69666dbe006fdd7360b9d2a1bad27bcbe"
+    },
+    {
+      "path": "it/03_motore_di_ricerca.txt",
+      "revision_id": 153306192,
+      "sha256": "9dc324daa8eaeb4da4738a02d19143b41338b321b83cfd203b072d3a0821e892"
+    },
+    {
+      "path": "en/03_search_engine_computing.txt",
+      "revision_id": 1380766394,
+      "sha256": "e064e2b50eed426152f24772f7067241456230ddef366f848a48a6e5b84a9505"
+    },
+    {
+      "path": "it/04_algoritmo.txt",
+      "revision_id": 153315439,
+      "sha256": "dd47ed62484d601231ae22a86e8d61e3bf1bee415d920b4fbd7ed6360760ef21"
+    },
+    {
+      "path": "en/04_algorithm.txt",
+      "revision_id": 1384972961,
+      "sha256": "cd73d10de72a181c6e2ad92feca96969f26dfb53a5d2ede09bc42de5f9fd47f4"
+    },
+    {
+      "path": "it/05_internet.txt",
+      "revision_id": 152887611,
+      "sha256": "3f6bf8e290dccf0588e1838d02a985a49a0c1737e0c82a49f65aa33601189675"
+    },
+    {
+      "path": "en/05_internet.txt",
+      "revision_id": 1384979951,
+      "sha256": "4bda88a82e8a7369127fdf54d5c5ca60cb1b8b6a2f0ba7498b623914c1ebd36c"
+    },
+    {
+      "path": "it/06_world_wide_web.txt",
+      "revision_id": 153028189,
+      "sha256": "85a2adcef3095947061d944bdce06808f1b03e8b47f187751f04114b81f4f13b"
+    },
+    {
+      "path": "en/06_world_wide_web.txt",
+      "revision_id": 1383774564,
+      "sha256": "d5eb49e26e6a3afa36e2a6ad01738b261f729cdd86902111cd4221ce156b2e3d"
+    },
+    {
+      "path": "it/07_intelligenza_artificiale.txt",
+      "revision_id": 153278044,
+      "sha256": "3f7b180511bbc12592ce4380c6552b05d2602111e075da921171c8b535b21e24"
+    },
+    {
+      "path": "en/07_artificial_intelligence.txt",
+      "revision_id": 1384997077,
+      "sha256": "65b70d41e68f1d6837a8ba56e71b18c2ea7d61ce7c5f10dd6113f4cd4819fa7f"
+    },
+    {
+      "path": "it/08_apprendimento_automatico.txt",
+      "revision_id": 152947022,
+      "sha256": "de2849970ab68b42d879d69df968d2d6afc394a08042c7fade6d251d07ba2aa7"
+    },
+    {
+      "path": "en/08_machine_learning.txt",
+      "revision_id": 1384336237,
+      "sha256": "20daf501a44925b8678812b31a4d2b23038e3faa79f0fe3d0bf8444dfaaadb33"
+    },
+    {
+      "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+      "revision_id": 148073957,
+      "sha256": "9f2db51bfd46935bc3f1310e8e7c305e41c8f20ddb02780d7b00dce635d8cb03"
+    },
+    {
+      "path": "en/09_natural_language_processing.txt",
+      "revision_id": 1383133655,
+      "sha256": "ebf8467edfe9b4e36c91ff2fe0a4d95949425e706a86ebd2d0b5b27c45137975"
+    },
+    {
+      "path": "it/10_statistica.txt",
+      "revision_id": 151071792,
+      "sha256": "f873672a8c88a10fc087d9c3d3c84183c28bb0a6b6df5710c88ae29f8ff3b5d8"
+    },
+    {
+      "path": "en/10_statistics.txt",
+      "revision_id": 1384330083,
+      "sha256": "a41213f3c5781e5cdc4e65f970b7177fc819fe4726725c2379afc3f1e48649be"
+    },
+    {
+      "path": "it/11_probabilita.txt",
+      "revision_id": 151512540,
+      "sha256": "a1a75b9761b674cf1c863258bee596190a1677de6d9872b7669a05b98a553e4c"
+    },
+    {
+      "path": "en/11_probability.txt",
+      "revision_id": 1381440308,
+      "sha256": "b44d4df84c9204477c7872760b4ae117e68b5b6a0341f39366730d1556b14d9d"
+    },
+    {
+      "path": "it/12_matematica.txt",
+      "revision_id": 153197082,
+      "sha256": "754718bf0437f2dd6fff8a0a9d1d7839a7370e267cc69eade437b74887ca48ed"
+    },
+    {
+      "path": "en/12_mathematics.txt",
+      "revision_id": 1385036528,
+      "sha256": "6217c58cbad24473c7cbe889cc4ec67f02d8307a49797e3a7e9004c83931b603"
+    },
+    {
+      "path": "it/13_fisica.txt",
+      "revision_id": 152452726,
+      "sha256": "ff89555d95993377f832d33da8888563fc1f77c15647a7a166a6fc956567be55"
+    },
+    {
+      "path": "en/13_physics.txt",
+      "revision_id": 1384142980,
+      "sha256": "7571f349d002b9634113b820db9d5100b12fed431b8e54d1382b28881474603b"
+    },
+    {
+      "path": "it/14_chimica.txt",
+      "revision_id": 152312325,
+      "sha256": "634bf9a450d2d5760e8d5316d450cfb1f3ab65c550530d0f85d316aacd315b24"
+    },
+    {
+      "path": "en/14_chemistry.txt",
+      "revision_id": 1384268382,
+      "sha256": "caadcb10e41c21d53a83b38fa833dedf2afa56ed4ee1be0c86780b32e5b6d784"
+    },
+    {
+      "path": "it/15_biologia.txt",
+      "revision_id": 153022336,
+      "sha256": "e1410ea1a72452d1c4f0380583d8b31df950a936abf6ab25a9197ea4b6889dd3"
+    },
+    {
+      "path": "en/15_biology.txt",
+      "revision_id": 1383003680,
+      "sha256": "8c56ab74dee3389e40720514e370659af329654e3acfaaabf8a386490438a30b"
+    },
+    {
+      "path": "it/16_astronomia.txt",
+      "revision_id": 151684563,
+      "sha256": "e4cd4e59713b9c534cbd1d86ddc50bfc923f71478205b30b647645a7783e0067"
+    },
+    {
+      "path": "en/16_astronomy.txt",
+      "revision_id": 1377879713,
+      "sha256": "7f252bba9aeb68608ded7fe6530637abcf80e47ef67aa212a490a3d548e39285"
+    },
+    {
+      "path": "it/17_terra.txt",
+      "revision_id": 153051027,
+      "sha256": "f8e0dc3f1cbbf2631b38e0e63fa2aa20b1d5e94130ca478403d01b5f8894d574"
+    },
+    {
+      "path": "en/17_earth.txt",
+      "revision_id": 1384491245,
+      "sha256": "8caee2869978c8dc6ceb057f4adb48c58eae613c9e4869e6e8417a5da075134a"
+    },
+    {
+      "path": "it/18_energia.txt",
+      "revision_id": 152342460,
+      "sha256": "0af9542736651dfd404b9b78e5359ea3e0bfe6309185cd83e518861315e51eeb"
+    },
+    {
+      "path": "en/18_energy.txt",
+      "revision_id": 1378442640,
+      "sha256": "4e716713bf784e9501dc34462ae7091212966021177f8ea50d76977c8bbc48bf"
+    },
+    {
+      "path": "it/19_ecologia.txt",
+      "revision_id": 153309051,
+      "sha256": "e87758b9757687f0a0224ba2ad1f98f1cc6c9214ad05a88580a56809e6717576"
+    },
+    {
+      "path": "en/19_ecology.txt",
+      "revision_id": 1381370177,
+      "sha256": "d5d40ba45a1f4dd4dbca78576c929783a8a66cb4b8173ba61fe9963c66501418"
+    },
+    {
+      "path": "it/20_clima.txt",
+      "revision_id": 152220175,
+      "sha256": "a6a56f3924e761410347fdeb9b5cb671c342f98f09d70405147fa12607a7d54b"
+    },
+    {
+      "path": "en/20_climate.txt",
+      "revision_id": 1374280114,
+      "sha256": "e6a76b4ed1b804f864e6e6085e39cc9a9d2aaa09031c311c5bae9ee7927bb01a"
+    },
+    {
+      "path": "it/21_cambiamento_climatico.txt",
+      "revision_id": 153314667,
+      "sha256": "272b242ddbc2ccceb72d7603bf2e0552191c6aa8f0a034616a2d3b3173b5574d"
+    },
+    {
+      "path": "en/21_climate_change.txt",
+      "revision_id": 1383409984,
+      "sha256": "d03320565cb96cbf92c1234b6a580f4ffffd871b73972a31e185c8664ff996f0"
+    },
+    {
+      "path": "it/22_mobilita_sostenibile.txt",
+      "revision_id": 149193465,
+      "sha256": "19b61ffab112e9f3f1ab8932ea9effaae9aa3725ddd5fbe81014ca1257866ab8"
+    },
+    {
+      "path": "en/22_sustainable_transport.txt",
+      "revision_id": 1384998600,
+      "sha256": "9b323f016e6d50e356e125f624377f622f4924f8fc8a23b7b6b53f8256426eda"
+    },
+    {
+      "path": "it/23_trasporto_pubblico.txt",
+      "revision_id": 149559611,
+      "sha256": "5c877fcd235625d1bce1c236b027c2aaaf0f6a333f9ac5c2557ab68eef41f977"
+    },
+    {
+      "path": "en/23_public_transport.txt",
+      "revision_id": 1383392154,
+      "sha256": "0b39d15a49a94d4a2201fcb38b7fa43a5c55b2a046dc5bcb8923ae849be1f57b"
+    },
+    {
+      "path": "it/24_citta.txt",
+      "revision_id": 151108771,
+      "sha256": "42b8e4d6e94bec8b57317b462dd7b9b936d058fa325aafe69d223b140d0ffe85"
+    },
+    {
+      "path": "en/24_city.txt",
+      "revision_id": 1384651391,
+      "sha256": "8abaf59038064e3ccef0dc19f6598d94980ba1396fb70bbaaaa9349e4904794b"
+    },
+    {
+      "path": "it/25_robotica.txt",
+      "revision_id": 152246633,
+      "sha256": "9c30a2a76f1ab33352879fa57e9e56f44a6ffda1a99497fd4f2856d009d0c2fd"
+    },
+    {
+      "path": "en/25_robotics.txt",
+      "revision_id": 1385014472,
+      "sha256": "f5cdf37e63b7514fc4a964f96013964d18aee4ace933b036e8cec1e88523a2be"
+    }
+  ]
+}

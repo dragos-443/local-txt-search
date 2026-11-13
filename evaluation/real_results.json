@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "corpus": "initial_50",
+  "document_count": 50,
+  "initial_reference_sha256": "7316d7cf269fe7fad64f7abbb2d646ac97f1d88d1781c4c74d87cf3a41b304d7",
+  "judgments_sha256": "f09b2fd49efa0d75c8b3bf6fc511ffcb80b848ac1a97c47880636ec2baad426b",
+  "search_code_sha256": "96a470b2d4d772e118cb8a502f0f12d6c49be66357c6e7b2791f6e595cfb42ed",
+  "cases": [
+    {
+      "id": "R01",
+      "query": "nome informatica",
+      "relevant_paths": [
+        "it/01_informatica.txt"
+      ],
+      "returned_paths": [
+        "it/01_informatica.txt"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R02",
+      "query": "nome \"base di dati\"",
+      "relevant_paths": [
+        "it/02_base_di_dati.txt"
+      ],
+      "returned_paths": [
+        "it/02_base_di_dati.txt"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R03",
+      "query": "nome machine learning",
+      "relevant_paths": [
+        "en/08_machine_learning.txt"
+      ],
+      "returned_paths": [
+        "en/08_machine_learning.txt"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R04",
+      "query": "nome \"public transport\"",
+      "relevant_paths": [
+        "en/23_public_transport.txt"
+      ],
+      "returned_paths": [
+        "en/23_public_transport.txt"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R05",
+      "query": "nome climate change",
+      "relevant_paths": [
+        "en/21_climate_change.txt"
+      ],
+      "returned_paths": [
+        "en/21_climate_change.txt"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R06",
+      "query": "contenuto algoritmo",
+      "relevant_paths": [
+        "it/04_algoritmo.txt",
+        "it/08_apprendimento_automatico.txt"
+      ],
+      "returned_paths": [
+        "it/04_algoritmo.txt",
+        "it/08_apprendimento_automatico.txt"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R07",
+      "query": "contenuto \"intelligenza artificiale\"",
+      "relevant_paths": [
+        "it/07_intelligenza_artificiale.txt",
+        "it/08_apprendimento_automatico.txt",
+        "it/09_elaborazione_del_linguaggio_naturale.txt"
+      ],
+      "returned_paths": [
+        "it/07_intelligenza_artificiale.txt",
+        "it/08_apprendimento_automatico.txt",
+        "it/09_elaborazione_del_linguaggio_naturale.txt"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R08",
+      "query": "contenuto machine learning",
+      "relevant_paths": [
+        "en/01_computer_science.txt",
+        "en/08_machine_learning.txt",
+        "en/11_probability.txt",
+        "it/07_intelligenza_artificiale.txt",
+        "it/08_apprendimento_automatico.txt"
+      ],
+      "returned_paths": [
+        "en/01_computer_science.txt",
+        "en/08_machine_learning.txt",
+        "en/11_probability.txt",
+        "it/07_intelligenza_artificiale.txt",
+        "it/08_apprendimento_automatico.txt"
+      ],
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R09",
+      "query": "contenuto \"climate change\"",
+      "relevant_paths": [
+        "en/20_climate.txt",
+        "en/21_climate_change.txt",
+        "en/22_sustainable_transport.txt",
+        "en/24_city.txt"
+      ],
+      "returned_paths": [
+        "en/20_climate.txt",
+        "en/21_climate_change.txt",
+        "en/22_sustainable_transport.txt",
+        "en/24_city.txt"
+      ],
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "R10",
+      "query": "contenuto energia",
+      "relevant_paths": [
+        "it/13_fisica.txt",
+        "it/14_chimica.txt",
+        "it/15_biologia.txt",
+        "it/18_energia.txt"
+      ],
+      "returned_paths": [
+        "it/13_fisica.txt",
+        "it/14_chimica.txt",
+        "it/15_biologia.txt",
+        "it/18_energia.txt"
+      ],
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "macro_average": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  }
+}

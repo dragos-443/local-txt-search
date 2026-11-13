@@ -374,6 +374,1206 @@
         "page_id": 20903754,
         "revision_id": 1385014472
       }
+    },
+    {
+      "pair_id": "26",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/26_programmazione_informatica.txt",
+        "title": "Programmazione (informatica)",
+        "page_id": 20884,
+        "revision_id": 153297204
+      },
+      "en": {
+        "path": "en/26_computer_programming.txt",
+        "title": "Computer programming",
+        "page_id": 5311,
+        "revision_id": 1381436947
+      }
+    },
+    {
+      "pair_id": "27",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/27_linguaggio_di_programmazione.txt",
+        "title": "Linguaggio di programmazione",
+        "page_id": 2573,
+        "revision_id": 153297198
+      },
+      "en": {
+        "path": "en/27_programming_language.txt",
+        "title": "Programming language",
+        "page_id": 23015,
+        "revision_id": 1384004129
+      }
+    },
+    {
+      "pair_id": "28",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/28_sistema_operativo.txt",
+        "title": "Sistema operativo",
+        "page_id": 2929144,
+        "revision_id": 152758121
+      },
+      "en": {
+        "path": "en/28_operating_system.txt",
+        "title": "Operating system",
+        "page_id": 22194,
+        "revision_id": 1378031792
+      }
+    },
+    {
+      "pair_id": "29",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/29_rete_di_computer.txt",
+        "title": "Rete di computer",
+        "page_id": 3796,
+        "revision_id": 152879213
+      },
+      "en": {
+        "path": "en/29_computer_network.txt",
+        "title": "Computer network",
+        "page_id": 4122592,
+        "revision_id": 1385227571
+      }
+    },
+    {
+      "pair_id": "30",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/30_protocollo_di_comunicazione.txt",
+        "title": "Protocollo di comunicazione",
+        "page_id": 1548198,
+        "revision_id": 144998805
+      },
+      "en": {
+        "path": "en/30_communication_protocol.txt",
+        "title": "Communication protocol",
+        "page_id": 28030850,
+        "revision_id": 1383921758
+      }
+    },
+    {
+      "pair_id": "31",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/31_sicurezza_informatica.txt",
+        "title": "Sicurezza informatica",
+        "page_id": 19414,
+        "revision_id": 153086591
+      },
+      "en": {
+        "path": "en/31_computer_security.txt",
+        "title": "Computer security",
+        "page_id": 7398,
+        "revision_id": 1385052592
+      }
+    },
+    {
+      "pair_id": "32",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/32_crittografia.txt",
+        "title": "Crittografia",
+        "page_id": 310023,
+        "revision_id": 148861056
+      },
+      "en": {
+        "path": "en/32_cryptography.txt",
+        "title": "Cryptography",
+        "page_id": 18934432,
+        "revision_id": 1385327236
+      }
+    },
+    {
+      "pair_id": "33",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/33_ingegneria_del_software.txt",
+        "title": "Ingegneria del software",
+        "page_id": 64993,
+        "revision_id": 150413334
+      },
+      "en": {
+        "path": "en/33_software_engineering.txt",
+        "title": "Software engineering",
+        "page_id": 27010,
+        "revision_id": 1385459264
+      }
+    },
+    {
+      "pair_id": "34",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/34_struttura_dati.txt",
+        "title": "Struttura dati",
+        "page_id": 27972,
+        "revision_id": 146630948
+      },
+      "en": {
+        "path": "en/34_data_structure.txt",
+        "title": "Data structure",
+        "page_id": 8519,
+        "revision_id": 1377666699
+      }
+    },
+    {
+      "pair_id": "35",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/35_teoria_della_complessita_computazionale.txt",
+        "title": "Teoria della complessità computazionale",
+        "page_id": 19604,
+        "revision_id": 153280227
+      },
+      "en": {
+        "path": "en/35_computational_complexity_theory.txt",
+        "title": "Computational complexity theory",
+        "page_id": 7543,
+        "revision_id": 1385057342
+      }
+    },
+    {
+      "pair_id": "36",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/36_big_data.txt",
+        "title": "Big data",
+        "page_id": 4334007,
+        "revision_id": 152390491
+      },
+      "en": {
+        "path": "en/36_big_data.txt",
+        "title": "Big data",
+        "page_id": 27051151,
+        "revision_id": 1384597515
+      }
+    },
+    {
+      "pair_id": "37",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/37_data_mining.txt",
+        "title": "Data mining",
+        "page_id": 91024,
+        "revision_id": 143414913
+      },
+      "en": {
+        "path": "en/37_data_mining.txt",
+        "title": "Data mining",
+        "page_id": 42253,
+        "revision_id": 1374109996
+      }
+    },
+    {
+      "pair_id": "38",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/38_cloud_computing.txt",
+        "title": "Cloud computing",
+        "page_id": 1709217,
+        "revision_id": 152670324
+      },
+      "en": {
+        "path": "en/38_cloud_computing.txt",
+        "title": "Cloud computing",
+        "page_id": 19541494,
+        "revision_id": 1382131775
+      }
+    },
+    {
+      "pair_id": "39",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/39_internet_delle_cose.txt",
+        "title": "Internet delle cose",
+        "page_id": 2285007,
+        "revision_id": 153122424
+      },
+      "en": {
+        "path": "en/39_internet_of_things.txt",
+        "title": "Internet of things",
+        "page_id": 12057519,
+        "revision_id": 1384877806
+      }
+    },
+    {
+      "pair_id": "40",
+      "selection_group": "informatica e dati",
+      "it": {
+        "path": "it/40_software_libero.txt",
+        "title": "Software libero",
+        "page_id": 151903,
+        "revision_id": 152304461
+      },
+      "en": {
+        "path": "en/40_free_software.txt",
+        "title": "Free software",
+        "page_id": 10635,
+        "revision_id": 1385026008
+      }
+    },
+    {
+      "pair_id": "41",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/41_algebra.txt",
+        "title": "Algebra",
+        "page_id": 1539729,
+        "revision_id": 153275232
+      },
+      "en": {
+        "path": "en/41_algebra.txt",
+        "title": "Algebra",
+        "page_id": 18716923,
+        "revision_id": 1382106610
+      }
+    },
+    {
+      "pair_id": "42",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/42_geometria.txt",
+        "title": "Geometria",
+        "page_id": 2035,
+        "revision_id": 150641752
+      },
+      "en": {
+        "path": "en/42_geometry.txt",
+        "title": "Geometry",
+        "page_id": 18973446,
+        "revision_id": 1384743533
+      }
+    },
+    {
+      "pair_id": "43",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/43_analisi_matematica.txt",
+        "title": "Analisi matematica",
+        "page_id": 1543724,
+        "revision_id": 153038126
+      },
+      "en": {
+        "path": "en/43_mathematical_analysis.txt",
+        "title": "Mathematical analysis",
+        "page_id": 48396,
+        "revision_id": 1385244385
+      }
+    },
+    {
+      "pair_id": "44",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/44_calcolo_infinitesimale.txt",
+        "title": "Calcolo infinitesimale",
+        "page_id": 128038,
+        "revision_id": 153003644
+      },
+      "en": {
+        "path": "en/44_calculus.txt",
+        "title": "Calculus",
+        "page_id": 5176,
+        "revision_id": 1376334098
+      }
+    },
+    {
+      "pair_id": "45",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/45_teoria_della_probabilita.txt",
+        "title": "Teoria della probabilità",
+        "page_id": 82755,
+        "revision_id": 153020633
+      },
+      "en": {
+        "path": "en/45_probability_theory.txt",
+        "title": "Probability theory",
+        "page_id": 23542,
+        "revision_id": 1381003021
+      }
+    },
+    {
+      "pair_id": "46",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/46_inferenza_statistica.txt",
+        "title": "Inferenza statistica",
+        "page_id": 64181,
+        "revision_id": 151395562
+      },
+      "en": {
+        "path": "en/46_statistical_inference.txt",
+        "title": "Statistical inference",
+        "page_id": 27577,
+        "revision_id": 1364302166
+      }
+    },
+    {
+      "pair_id": "47",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/47_variabile_casuale.txt",
+        "title": "Variabile casuale",
+        "page_id": 4427,
+        "revision_id": 152925723
+      },
+      "en": {
+        "path": "en/47_random_variable.txt",
+        "title": "Random variable",
+        "page_id": 25685,
+        "revision_id": 1377239815
+      }
+    },
+    {
+      "pair_id": "48",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/48_regressione_lineare.txt",
+        "title": "Regressione lineare",
+        "page_id": 3653,
+        "revision_id": 153189236
+      },
+      "en": {
+        "path": "en/48_linear_regression.txt",
+        "title": "Linear regression",
+        "page_id": 48758386,
+        "revision_id": 1384521760
+      }
+    },
+    {
+      "pair_id": "49",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/49_teorema_di_bayes.txt",
+        "title": "Teorema di Bayes",
+        "page_id": 4314,
+        "revision_id": 151700729
+      },
+      "en": {
+        "path": "en/49_bayes_theorem.txt",
+        "title": "Bayes' theorem",
+        "page_id": 49569,
+        "revision_id": 1381079899
+      }
+    },
+    {
+      "pair_id": "50",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/50_ottimizzazione_matematica.txt",
+        "title": "Ottimizzazione (matematica)",
+        "page_id": 69623,
+        "revision_id": 138194830
+      },
+      "en": {
+        "path": "en/50_mathematical_optimization.txt",
+        "title": "Mathematical optimization",
+        "page_id": 52033,
+        "revision_id": 1383201701
+      }
+    },
+    {
+      "pair_id": "51",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/51_teoria_dei_grafi.txt",
+        "title": "Teoria dei grafi",
+        "page_id": 25616,
+        "revision_id": 147653946
+      },
+      "en": {
+        "path": "en/51_graph_theory.txt",
+        "title": "Graph theory",
+        "page_id": 12401,
+        "revision_id": 1383702052
+      }
+    },
+    {
+      "pair_id": "52",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/52_logica_matematica.txt",
+        "title": "Logica matematica",
+        "page_id": 78920,
+        "revision_id": 150705124
+      },
+      "en": {
+        "path": "en/52_mathematical_logic.txt",
+        "title": "Mathematical logic",
+        "page_id": 19636,
+        "revision_id": 1382474018
+      }
+    },
+    {
+      "pair_id": "53",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/53_matematica_applicata.txt",
+        "title": "Matematica applicata",
+        "page_id": 3195287,
+        "revision_id": 150499424
+      },
+      "en": {
+        "path": "en/53_applied_mathematics.txt",
+        "title": "Applied mathematics",
+        "page_id": 24295969,
+        "revision_id": 1385155109
+      }
+    },
+    {
+      "pair_id": "54",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/54_equazione_differenziale.txt",
+        "title": "Equazione differenziale",
+        "page_id": 38045,
+        "revision_id": 152372276
+      },
+      "en": {
+        "path": "en/54_differential_equation.txt",
+        "title": "Differential equation",
+        "page_id": 1424309,
+        "revision_id": 1383453774
+      }
+    },
+    {
+      "pair_id": "55",
+      "selection_group": "matematica e statistica",
+      "it": {
+        "path": "it/55_statistica_descrittiva.txt",
+        "title": "Statistica descrittiva",
+        "page_id": 3872,
+        "revision_id": 144011494
+      },
+      "en": {
+        "path": "en/55_descriptive_statistics.txt",
+        "title": "Descriptive statistics",
+        "page_id": 8187,
+        "revision_id": 1372165595
+      }
+    },
+    {
+      "pair_id": "56",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/56_genetica.txt",
+        "title": "Genetica",
+        "page_id": 2111,
+        "revision_id": 151815972
+      },
+      "en": {
+        "path": "en/56_genetics.txt",
+        "title": "Genetics",
+        "page_id": 12266,
+        "revision_id": 1380286629
+      }
+    },
+    {
+      "pair_id": "57",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/57_evoluzione.txt",
+        "title": "Evoluzione",
+        "page_id": 837814,
+        "revision_id": 153301006
+      },
+      "en": {
+        "path": "en/57_evolution.txt",
+        "title": "Evolution",
+        "page_id": 9236,
+        "revision_id": 1385277053
+      }
+    },
+    {
+      "pair_id": "58",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/58_dna.txt",
+        "title": "DNA",
+        "page_id": 2895727,
+        "revision_id": 153213291
+      },
+      "en": {
+        "path": "en/58_dna.txt",
+        "title": "DNA",
+        "page_id": 7955,
+        "revision_id": 1383712979
+      }
+    },
+    {
+      "pair_id": "59",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/59_cellula.txt",
+        "title": "Cellula",
+        "page_id": 2270912,
+        "revision_id": 151692578
+      },
+      "en": {
+        "path": "en/59_cell_biology.txt",
+        "title": "Cell (biology)",
+        "page_id": 4230,
+        "revision_id": 1384616868
+      }
+    },
+    {
+      "pair_id": "60",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/60_ecosistema.txt",
+        "title": "Ecosistema",
+        "page_id": 59736,
+        "revision_id": 153284498
+      },
+      "en": {
+        "path": "en/60_ecosystem.txt",
+        "title": "Ecosystem",
+        "page_id": 9632,
+        "revision_id": 1369245800
+      }
+    },
+    {
+      "pair_id": "61",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/61_biodiversita.txt",
+        "title": "Biodiversità",
+        "page_id": 53754,
+        "revision_id": 152821483
+      },
+      "en": {
+        "path": "en/61_biodiversity.txt",
+        "title": "Biodiversity",
+        "page_id": 45086,
+        "revision_id": 1385296754
+      }
+    },
+    {
+      "pair_id": "62",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/62_oceano.txt",
+        "title": "Oceano",
+        "page_id": 693639,
+        "revision_id": 152690961
+      },
+      "en": {
+        "path": "en/62_ocean.txt",
+        "title": "Ocean",
+        "page_id": 18842359,
+        "revision_id": 1382360701
+      }
+    },
+    {
+      "pair_id": "63",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/63_atmosfera_terrestre.txt",
+        "title": "Atmosfera terrestre",
+        "page_id": 623656,
+        "revision_id": 151764448
+      },
+      "en": {
+        "path": "en/63_atmosphere_of_earth.txt",
+        "title": "Atmosphere of Earth",
+        "page_id": 202898,
+        "revision_id": 1381726987
+      }
+    },
+    {
+      "pair_id": "64",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/64_sistema_solare.txt",
+        "title": "Sistema solare",
+        "page_id": 1349270,
+        "revision_id": 152814721
+      },
+      "en": {
+        "path": "en/64_solar_system.txt",
+        "title": "Solar System",
+        "page_id": 26903,
+        "revision_id": 1385201272
+      }
+    },
+    {
+      "pair_id": "65",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/65_stella.txt",
+        "title": "Stella",
+        "page_id": 103869,
+        "revision_id": 153277442
+      },
+      "en": {
+        "path": "en/65_star.txt",
+        "title": "Star",
+        "page_id": 26808,
+        "revision_id": 1382096914
+      }
+    },
+    {
+      "pair_id": "66",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/66_galassia.txt",
+        "title": "Galassia",
+        "page_id": 103861,
+        "revision_id": 153260525
+      },
+      "en": {
+        "path": "en/66_galaxy.txt",
+        "title": "Galaxy",
+        "page_id": 12558,
+        "revision_id": 1384645061
+      }
+    },
+    {
+      "pair_id": "67",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/67_molecola.txt",
+        "title": "Molecola",
+        "page_id": 2761,
+        "revision_id": 153272706
+      },
+      "en": {
+        "path": "en/67_molecule.txt",
+        "title": "Molecule",
+        "page_id": 19555,
+        "revision_id": 1380935776
+      }
+    },
+    {
+      "pair_id": "68",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/68_atomo.txt",
+        "title": "Atomo",
+        "page_id": 2182606,
+        "revision_id": 153159291
+      },
+      "en": {
+        "path": "en/68_atom.txt",
+        "title": "Atom",
+        "page_id": 902,
+        "revision_id": 1384671172
+      }
+    },
+    {
+      "pair_id": "69",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/69_reazione_chimica.txt",
+        "title": "Reazione chimica",
+        "page_id": 51512,
+        "revision_id": 151113395
+      },
+      "en": {
+        "path": "en/69_chemical_reaction.txt",
+        "title": "Chemical reaction",
+        "page_id": 6271,
+        "revision_id": 1367113117
+      }
+    },
+    {
+      "pair_id": "70",
+      "selection_group": "scienze naturali",
+      "it": {
+        "path": "it/70_termodinamica.txt",
+        "title": "Termodinamica",
+        "page_id": 275126,
+        "revision_id": 152532675
+      },
+      "en": {
+        "path": "en/70_thermodynamics.txt",
+        "title": "Thermodynamics",
+        "page_id": 29952,
+        "revision_id": 1383796974
+      }
+    },
+    {
+      "pair_id": "71",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/71_fonti_di_energia_rinnovabili.txt",
+        "title": "Fonti di energia rinnovabili",
+        "page_id": 2600882,
+        "revision_id": 153154643
+      },
+      "en": {
+        "path": "en/71_renewable_energy.txt",
+        "title": "Renewable energy",
+        "page_id": 25784,
+        "revision_id": 1385469805
+      }
+    },
+    {
+      "pair_id": "72",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/72_energia_solare.txt",
+        "title": "Energia solare",
+        "page_id": 2912995,
+        "revision_id": 152342533
+      },
+      "en": {
+        "path": "en/72_solar_energy.txt",
+        "title": "Solar energy",
+        "page_id": 27743,
+        "revision_id": 1381838072
+      }
+    },
+    {
+      "pair_id": "73",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/73_energia_eolica.txt",
+        "title": "Energia eolica",
+        "page_id": 2543735,
+        "revision_id": 153044318
+      },
+      "en": {
+        "path": "en/73_wind_power.txt",
+        "title": "Wind power",
+        "page_id": 277289,
+        "revision_id": 1384659645
+      }
+    },
+    {
+      "pair_id": "74",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/74_energia_idroelettrica.txt",
+        "title": "Energia idroelettrica",
+        "page_id": 2364038,
+        "revision_id": 152573647
+      },
+      "en": {
+        "path": "en/74_hydroelectricity.txt",
+        "title": "Hydroelectricity",
+        "page_id": 381399,
+        "revision_id": 1384092597
+      }
+    },
+    {
+      "pair_id": "75",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/75_combustibile_fossile.txt",
+        "title": "Combustibile fossile",
+        "page_id": 222946,
+        "revision_id": 152136770
+      },
+      "en": {
+        "path": "en/75_fossil_fuel.txt",
+        "title": "Fossil fuel",
+        "page_id": 48146,
+        "revision_id": 1385061278
+      }
+    },
+    {
+      "pair_id": "76",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/76_gas_serra.txt",
+        "title": "Gas serra",
+        "page_id": 1779193,
+        "revision_id": 152535846
+      },
+      "en": {
+        "path": "en/76_greenhouse_gas.txt",
+        "title": "Greenhouse gas",
+        "page_id": 21350772,
+        "revision_id": 1383517729
+      }
+    },
+    {
+      "pair_id": "77",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/77_anidride_carbonica.txt",
+        "title": "Anidride carbonica",
+        "page_id": 2912780,
+        "revision_id": 151721151
+      },
+      "en": {
+        "path": "en/77_carbon_dioxide.txt",
+        "title": "Carbon dioxide",
+        "page_id": 5906,
+        "revision_id": 1385120994
+      }
+    },
+    {
+      "pair_id": "78",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/78_inquinamento_atmosferico.txt",
+        "title": "Inquinamento atmosferico",
+        "page_id": 109019,
+        "revision_id": 152758008
+      },
+      "en": {
+        "path": "en/78_air_pollution.txt",
+        "title": "Air pollution",
+        "page_id": 10934212,
+        "revision_id": 1385139304
+      }
+    },
+    {
+      "pair_id": "79",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/79_sostenibilita.txt",
+        "title": "Sostenibilità",
+        "page_id": 903519,
+        "revision_id": 152184602
+      },
+      "en": {
+        "path": "en/79_sustainability.txt",
+        "title": "Sustainability",
+        "page_id": 18413531,
+        "revision_id": 1385441895
+      }
+    },
+    {
+      "pair_id": "80",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/80_sviluppo_sostenibile.txt",
+        "title": "Sviluppo sostenibile",
+        "page_id": 113018,
+        "revision_id": 153210527
+      },
+      "en": {
+        "path": "en/80_sustainable_development.txt",
+        "title": "Sustainable development",
+        "page_id": 29501,
+        "revision_id": 1385477970
+      }
+    },
+    {
+      "pair_id": "81",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/81_riciclaggio_dei_rifiuti.txt",
+        "title": "Riciclaggio dei rifiuti",
+        "page_id": 2596844,
+        "revision_id": 151730238
+      },
+      "en": {
+        "path": "en/81_recycling.txt",
+        "title": "Recycling",
+        "page_id": 70157,
+        "revision_id": 1382269564
+      }
+    },
+    {
+      "pair_id": "82",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/82_diboscamento.txt",
+        "title": "Diboscamento",
+        "page_id": 2229152,
+        "revision_id": 152323968
+      },
+      "en": {
+        "path": "en/82_deforestation.txt",
+        "title": "Deforestation",
+        "page_id": 8103,
+        "revision_id": 1385467577
+      }
+    },
+    {
+      "pair_id": "83",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/83_agricoltura_sostenibile.txt",
+        "title": "Agricoltura sostenibile",
+        "page_id": 8903133,
+        "revision_id": 146822875
+      },
+      "en": {
+        "path": "en/83_sustainable_agriculture.txt",
+        "title": "Sustainable agriculture",
+        "page_id": 216143,
+        "revision_id": 1385231779
+      }
+    },
+    {
+      "pair_id": "84",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/84_impronta_ecologica.txt",
+        "title": "Impronta ecologica",
+        "page_id": 1140804,
+        "revision_id": 151276835
+      },
+      "en": {
+        "path": "en/84_ecological_footprint.txt",
+        "title": "Ecological footprint",
+        "page_id": 301500,
+        "revision_id": 1368839661
+      }
+    },
+    {
+      "pair_id": "85",
+      "selection_group": "ambiente ed energia",
+      "it": {
+        "path": "it/85_economia_circolare.txt",
+        "title": "Economia circolare",
+        "page_id": 5648519,
+        "revision_id": 152579962
+      },
+      "en": {
+        "path": "en/85_circular_economy.txt",
+        "title": "Circular economy",
+        "page_id": 31666505,
+        "revision_id": 1384635731
+      }
+    },
+    {
+      "pair_id": "86",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/86_auto_elettrica.txt",
+        "title": "Auto elettrica",
+        "page_id": 652422,
+        "revision_id": 152895857
+      },
+      "en": {
+        "path": "en/86_electric_car.txt",
+        "title": "Electric car",
+        "page_id": 16105186,
+        "revision_id": 1384081643
+      }
+    },
+    {
+      "pair_id": "87",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/87_bicicletta.txt",
+        "title": "Bicicletta",
+        "page_id": 2716545,
+        "revision_id": 153344035
+      },
+      "en": {
+        "path": "en/87_bicycle.txt",
+        "title": "Bicycle",
+        "page_id": 3973,
+        "revision_id": 1375091239
+      }
+    },
+    {
+      "pair_id": "88",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/88_ferrovia.txt",
+        "title": "Ferrovia",
+        "page_id": 12402,
+        "revision_id": 152944877
+      },
+      "en": {
+        "path": "en/88_rail_transport.txt",
+        "title": "Rail transport",
+        "page_id": 25715,
+        "revision_id": 1383017057
+      }
+    },
+    {
+      "pair_id": "89",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/89_metropolitana.txt",
+        "title": "Metropolitana",
+        "page_id": 55618,
+        "revision_id": 151093859
+      },
+      "en": {
+        "path": "en/89_rapid_transit.txt",
+        "title": "Rapid transit",
+        "page_id": 18361733,
+        "revision_id": 1383508791
+      }
+    },
+    {
+      "pair_id": "90",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/90_tram.txt",
+        "title": "Tram",
+        "page_id": 230652,
+        "revision_id": 149998970
+      },
+      "en": {
+        "path": "en/90_tram.txt",
+        "title": "Tram",
+        "page_id": 30733,
+        "revision_id": 1383604378
+      }
+    },
+    {
+      "pair_id": "91",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/91_citta_intelligente.txt",
+        "title": "Città intelligente",
+        "page_id": 4037910,
+        "revision_id": 152111072
+      },
+      "en": {
+        "path": "en/91_smart_city.txt",
+        "title": "Smart city",
+        "page_id": 12592050,
+        "revision_id": 1384927602
+      }
+    },
+    {
+      "pair_id": "92",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/92_robot.txt",
+        "title": "Robot",
+        "page_id": 3670,
+        "revision_id": 153020516
+      },
+      "en": {
+        "path": "en/92_robot.txt",
+        "title": "Robot",
+        "page_id": 25781,
+        "revision_id": 1384144252
+      }
+    },
+    {
+      "pair_id": "93",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/93_rete_neurale_artificiale.txt",
+        "title": "Rete neurale artificiale",
+        "page_id": 4100372,
+        "revision_id": 153152725
+      },
+      "en": {
+        "path": "en/93_neural_network_machine_learning.txt",
+        "title": "Neural network (machine learning)",
+        "page_id": 21523,
+        "revision_id": 1383844653
+      }
+    },
+    {
+      "pair_id": "94",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/94_apprendimento_profondo.txt",
+        "title": "Apprendimento profondo",
+        "page_id": 4299797,
+        "revision_id": 151683216
+      },
+      "en": {
+        "path": "en/94_deep_learning.txt",
+        "title": "Deep learning",
+        "page_id": 32472154,
+        "revision_id": 1384841719
+      }
+    },
+    {
+      "pair_id": "95",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/95_visione_artificiale.txt",
+        "title": "Visione artificiale",
+        "page_id": 660343,
+        "revision_id": 152796717
+      },
+      "en": {
+        "path": "en/95_computer_vision.txt",
+        "title": "Computer vision",
+        "page_id": 6596,
+        "revision_id": 1383999365
+      }
+    },
+    {
+      "pair_id": "96",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/96_riconoscimento_vocale.txt",
+        "title": "Riconoscimento vocale",
+        "page_id": 120430,
+        "revision_id": 148726260
+      },
+      "en": {
+        "path": "en/96_speech_recognition.txt",
+        "title": "Speech recognition",
+        "page_id": 29468,
+        "revision_id": 1380060991
+      }
+    },
+    {
+      "pair_id": "97",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/97_sistema_di_raccomandazione.txt",
+        "title": "Sistema di raccomandazione",
+        "page_id": 6966909,
+        "revision_id": 145479418
+      },
+      "en": {
+        "path": "en/97_recommender_system.txt",
+        "title": "Recommender system",
+        "page_id": 596646,
+        "revision_id": 1383244701
+      }
+    },
+    {
+      "pair_id": "98",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/98_apprendimento_per_rinforzo.txt",
+        "title": "Apprendimento per rinforzo",
+        "page_id": 20666,
+        "revision_id": 152512289
+      },
+      "en": {
+        "path": "en/98_reinforcement_learning.txt",
+        "title": "Reinforcement learning",
+        "page_id": 66294,
+        "revision_id": 1382044619
+      }
+    },
+    {
+      "pair_id": "99",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/99_elaborazione_digitale_delle_immagini.txt",
+        "title": "Elaborazione digitale delle immagini",
+        "page_id": 1194071,
+        "revision_id": 150219313
+      },
+      "en": {
+        "path": "en/99_digital_image_processing.txt",
+        "title": "Digital image processing",
+        "page_id": 97922,
+        "revision_id": 1385256586
+      }
+    },
+    {
+      "pair_id": "100",
+      "selection_group": "mobilità e robotica",
+      "it": {
+        "path": "it/100_sensore.txt",
+        "title": "Sensore",
+        "page_id": 56146,
+        "revision_id": 143004176
+      },
+      "en": {
+        "path": "en/100_sensor.txt",
+        "title": "Sensor",
+        "page_id": 235757,
+        "revision_id": 1384649690
+      }
     }
   ]
 }

@@ -1,0 +1,7 @@
+La teoria della probabilità è lo studio matematico della probabilità.
+
+I matematici si riferiscono alle probabilità come a numeri nell'intervallo da 0 a 1, assegnati ad "eventi" la cui ricorrenza è casuale. Le probabilità P(E) sono assegnate ad eventi E secondo gli assiomi della probabilità.
+
+La probabilità che un evento E avvenga dato il verificarsi noto di un evento F è la probabilità condizionata di E dato F; il suo valore numerico è P(E∩F)/P(F) (finché P(F) è diverso da zero). Se la probabilità condizionale di E dato F è la stessa della probabilità ("non condizionale") di E, allora E ed F sono detti eventi indipendenti. Che questa relazione tra E e F sia simmetrica, può essere visto più chiaramente osservando che è la stessa cosa che dire P(E∩F)=P(E)P(F).
+
+Due concetti cruciali nella teoria della probabilità sono quelli di variabile casuale e di distribuzione probabilistica di una variabile casuale. In altri termini descrivere in termini probabilistici o statistici un fenomeno aleatorio nel tempo, caratterizzabile dunque da una variabile aleatoria, vuol dire descriverlo in termini di densità di distribuzione di probabilità e dei suoi parametri di media o valore atteso e varianza.

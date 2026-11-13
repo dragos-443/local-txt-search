@@ -1,0 +1,2168 @@
+{
+  "schema_version": 1,
+  "method": "Ispezione testuale indipendente dal motore sui 50 file iniziali; parole intere, casefold e accenti rimossi; AND senza ordine, phrase consecutiva.",
+  "initial_reference_sha256": "7316d7cf269fe7fad64f7abbb2d646ac97f1d88d1781c4c74d87cf3a41b304d7",
+  "cases": [
+    {
+      "id": "R01",
+      "query": "nome informatica",
+      "field": "filename",
+      "mode": "all_terms",
+      "terms": [
+        "informatica"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "it/01_informatica.txt"
+      ]
+    },
+    {
+      "id": "R02",
+      "query": "nome \"base di dati\"",
+      "field": "filename",
+      "mode": "phrase",
+      "terms": [
+        "base",
+        "di",
+        "dati"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "it/02_base_di_dati.txt"
+      ]
+    },
+    {
+      "id": "R03",
+      "query": "nome machine learning",
+      "field": "filename",
+      "mode": "all_terms",
+      "terms": [
+        "machine",
+        "learning"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "en/08_machine_learning.txt"
+      ]
+    },
+    {
+      "id": "R04",
+      "query": "nome \"public transport\"",
+      "field": "filename",
+      "mode": "phrase",
+      "terms": [
+        "public",
+        "transport"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "en/23_public_transport.txt"
+      ]
+    },
+    {
+      "id": "R05",
+      "query": "nome climate change",
+      "field": "filename",
+      "mode": "all_terms",
+      "terms": [
+        "climate",
+        "change"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "en/21_climate_change.txt"
+      ]
+    },
+    {
+      "id": "R06",
+      "query": "contenuto algoritmo",
+      "field": "content",
+      "mode": "all_terms",
+      "terms": [
+        "algoritmo"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "it/04_algoritmo.txt",
+        "it/08_apprendimento_automatico.txt"
+      ]
+    },
+    {
+      "id": "R07",
+      "query": "contenuto \"intelligenza artificiale\"",
+      "field": "content",
+      "mode": "phrase",
+      "terms": [
+        "intelligenza",
+        "artificiale"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "it/07_intelligenza_artificiale.txt",
+        "it/08_apprendimento_automatico.txt",
+        "it/09_elaborazione_del_linguaggio_naturale.txt"
+      ]
+    },
+    {
+      "id": "R08",
+      "query": "contenuto machine learning",
+      "field": "content",
+      "mode": "all_terms",
+      "terms": [
+        "machine",
+        "learning"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "en/01_computer_science.txt",
+        "en/08_machine_learning.txt",
+        "en/11_probability.txt",
+        "it/07_intelligenza_artificiale.txt",
+        "it/08_apprendimento_automatico.txt"
+      ]
+    },
+    {
+      "id": "R09",
+      "query": "contenuto \"climate change\"",
+      "field": "content",
+      "mode": "phrase",
+      "terms": [
+        "climate",
+        "change"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": true
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "en/20_climate.txt",
+        "en/21_climate_change.txt",
+        "en/22_sustainable_transport.txt",
+        "en/24_city.txt"
+      ]
+    },
+    {
+      "id": "R10",
+      "query": "contenuto energia",
+      "field": "content",
+      "mode": "all_terms",
+      "terms": [
+        "energia"
+      ],
+      "labels": [
+        {
+          "path": "it/01_informatica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/01_computer_science.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/02_base_di_dati.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/02_database.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/03_motore_di_ricerca.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/03_search_engine_computing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/04_algoritmo.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/04_algorithm.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/05_internet.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/06_world_wide_web.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/07_intelligenza_artificiale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/07_artificial_intelligence.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/08_apprendimento_automatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/08_machine_learning.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/09_elaborazione_del_linguaggio_naturale.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/09_natural_language_processing.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/10_statistica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/10_statistics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/11_probabilita.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/11_probability.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/12_matematica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/12_mathematics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/13_fisica.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/13_physics.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/14_chimica.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/14_chemistry.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/15_biologia.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/15_biology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/16_astronomia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/16_astronomy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/17_terra.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/17_earth.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/18_energia.txt",
+          "relevant": true
+        },
+        {
+          "path": "en/18_energy.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/19_ecologia.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/19_ecology.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/20_clima.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/20_climate.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/21_cambiamento_climatico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/21_climate_change.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/22_mobilita_sostenibile.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/22_sustainable_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/23_trasporto_pubblico.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/23_public_transport.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/24_citta.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/24_city.txt",
+          "relevant": false
+        },
+        {
+          "path": "it/25_robotica.txt",
+          "relevant": false
+        },
+        {
+          "path": "en/25_robotics.txt",
+          "relevant": false
+        }
+      ],
+      "relevant_paths": [
+        "it/13_fisica.txt",
+        "it/14_chimica.txt",
+        "it/15_biologia.txt",
+        "it/18_energia.txt"
+      ]
+    }
+  ]
+}

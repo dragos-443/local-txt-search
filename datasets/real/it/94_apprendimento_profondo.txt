@@ -1,0 +1,5 @@
+L'apprendimento profondo (in inglese deep learning, abbreviato in DL) è quel campo di ricerca dell'apprendimento automatico (in inglese machine learning) e dell'intelligenza artificiale (IA) che si basa su diversi livelli di rappresentazione, corrispondenti a gerarchie di caratteristiche di fattori o concetti, dove i concetti di alto livello sono definiti sulla base di quelli di basso.
+
+In altre parole, per apprendimento profondo si intende un insieme di tecniche basate su reti neurali artificiali organizzate in diversi strati, dove ogni strato calcola i valori per quello successivo affinché l'informazione venga elaborata in maniera sempre più completa.
+
+Tra le architetture di apprendimento profondo si annoverano le reti neurali profonde, le reti neurali convoluzionali, le reti neurali ricorrenti e le reti deep belief, che sono state applicate alla visione artificiale, al riconoscimento automatico del discorso, all'elaborazione del linguaggio naturale, al riconoscimento audio ed alla bioinformatica. "Apprendimento profondo" è un'espressione oggi famosa che ridà lustro al concetto di rete neurale.

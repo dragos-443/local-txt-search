@@ -1,8 +1,11 @@
 # Corpus reale Wikipedia IT/EN
 
-Il corpus contiene le introduzioni di 25 coppie di voci Wikipedia: 25 file in
-italiano in `it/` e le 25 voci collegate in inglese in `en/`. I file sono in
+Il corpus contiene le introduzioni di 100 coppie di voci Wikipedia: 100 file
+italiani in `it/` e 100 voci collegate in inglese in `en/`. I file sono in
 UTF-8 e vengono conservati nel repository per rendere riproducibili le prove.
+Le coppie 01–25 sono il sottoinsieme iniziale usato per i giudizi di rilevanza
+e per il benchmark a 50 file; percorsi, revisioni e SHA-256 sono congelati in
+`initial_50.json`.
 
 ## Provenienza e manifest
 
@@ -12,10 +15,19 @@ dimensione in byte e SHA-256 di ciascun file. L'URL permanente attribuisce il
 testo ai contributori della relativa voce e permette di consultare la revisione
 esatta da cui è stato derivato.
 
-La selezione delle revisioni è stata congelata l'11 novembre 2026. Le
-introduzioni estratte non contengono avvisi di licenza aggiuntivi. Quando si
-aggiornano le revisioni occorre controllare nuovamente la pagina, la sua
-cronologia e le eventuali note specifiche prima di accettare il nuovo corpus.
+Le 75 coppie aggiunte sono state selezionate in cinque gruppi da 15:
+informatica e dati, matematica e statistica, scienze naturali, ambiente ed
+energia, mobilità e robotica. `candidates.json` conserva la lista ordinata dei
+candidati e `selection.json` registra accettazioni, scarti e relative cause.
+Sono accettate voci italiane distinte da quelle già presenti, con collegamento
+inglese, due introduzioni non vuote e contenuti non duplicati. Si estrae solo
+il testo dei paragrafi introduttivi, escludendo immagini, tabelle ed elementi
+non testuali.
+
+Le prime 25 coppie sono state congelate l'11 novembre 2026; le successive
+sono state selezionate il 13 novembre 2026. Una revisione fissa identifica
+la pagina di origine, mentre il file versionato e il suo SHA-256 fissano
+esattamente i byte usati nell'esperimento.
 
 ## Trasformazione e riproduzione
 
@@ -23,23 +35,24 @@ Lo script `../../scripts/prepare_real_corpus.py` recupera tramite MediaWiki
 l'HTML della revisione indicata da `oldid`, conserva i paragrafi introduttivi
 prima della prima sezione, rimuove gli elementi non testuali, normalizza gli
 spazi e Unicode in NFC e scrive UTF-8. Non effettua correzioni editoriali o
-traduzioni.
+traduzioni. Prima di scrivere controlla hash e revisioni dei 50 file iniziali,
+codifica, duplicati e conteggi; un disaccordo interrompe la generazione.
 
-Per rigenerare file e manifest dalle revisioni già fissate:
+Per verificare i 50 iniziali e rigenerare i 150 nuovi file dalle revisioni fissate:
 
 ```powershell
 python scripts/prepare_real_corpus.py
 ```
 
-Solo per selezionare deliberatamente le revisioni correnti, aggiornare il lock
-e rigenerare il corpus:
+Per ripetere la selezione *a partire dal corpus iniziale di 25 coppie*:
 
 ```powershell
-python scripts/prepare_real_corpus.py --update-revisions
+python scripts/prepare_real_corpus.py --append-new-pairs
 ```
 
-L'aggiornamento può cambiare contenuti, dimensioni e hash e richiede una nuova
-verifica delle condizioni di riuso.
+La selezione usa le revisioni correnti dei nuovi candidati e può quindi produrre
+file diversi da quelli versionati. Per riprodurre le misure pubblicate usare i
+file e gli hash presenti nel repository.
 
 ## Licenza e attribuzione
 

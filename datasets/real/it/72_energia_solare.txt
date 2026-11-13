@@ -1,0 +1,25 @@
+L'energia solare è l'energia associata alla radiazione solare e rappresenta la principale fonte di energia per la vita sulla Terra. È la forma di energia normalmente utilizzata dagli organismi autotrofi, cioè quelli che eseguono la fotosintesi, comunemente indicati come "vegetali", e in maniera indiretta, anche da altri organismi viventi, che sfruttano invece l'energia chimica ricavata dagli stessi vegetali o da altri organismi che a loro volta si nutrono di vegetali.
+
+Può essere utilizzata direttamente a scopo energetico per produrre calore o energia elettrica con varie tipologie di impianto. Sulla Terra il valore di tale energia (a livello locale o globale, giornaliera, mensile o annuale) si può calcolare come il prodotto tra l'insolazione media, l'eliofania nell'intervallo di tempo considerato e la superficie incidente considerata.
+
+Da un punto di vista più generale, quasi tutte le fonti di energia utilizzate dall'uomo derivano in maniera indiretta dall'energia solare.
+
+Il ciclo dell'acqua per l'energia idroelettrica si basa sull'evaporazione dell'acqua generata dall'energia solare. I venti su cui si basa l'energia eolica sono generati da differenze di temperatura, dipendenti dalla radiazione solare. Anche l'energia che si può estrarre dalle biomasse e dai combustibili fossili deriva dall'energia proveniente dalla radiazione solare. Le uniche forme di energia che non derivano indirettamente dal sole sono l'energia geotermica, che deriva dall'energia interna del nucleo terrestre, e l'energia delle maree, derivante dal movimento della luna intorno alla terra.
+
+Il valore dell'irraggiamento solare si può ottenere utilizzando la legge di Stefan-Boltzmann per il corpo nero (a cui si può assimilare una stella):
+
+I=σT4
+
+dove
+
+σ=5,67⋅10−8 W/(m2⋅K4)
+
+e T è la temperatura assoluta (media) della superficie solare che è di circa 5780 K. Il calcolo fornisce il valore di I=6,33⋅107 W/m2 per la potenza termica specifica emessa dal sole.
+
+Quella che arriva sulla superficie della Terra è solo una minima parte di questa e si può ottenere utilizzando la legge dell'irradiazione sferica cioè moltiplicando il precedente valore per il rapporto al quadrato tra il raggio solare medio che è di circa
+
+6,95⋅108 m
+
+e la distanza media Sole-Terra che è di circa
+
+1,49⋅1011 m

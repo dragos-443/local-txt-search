@@ -1,0 +1,541 @@
+{
+  "decisions": [
+    {
+      "group": "informatica e dati",
+      "title": "Programmazione (informatica)",
+      "outcome": "accepted",
+      "pair_id": "26"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Linguaggio di programmazione",
+      "outcome": "accepted",
+      "pair_id": "27"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Sistema operativo",
+      "outcome": "accepted",
+      "pair_id": "28"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Rete di computer",
+      "outcome": "accepted",
+      "pair_id": "29"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Protocollo di comunicazione",
+      "outcome": "accepted",
+      "pair_id": "30"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Sicurezza informatica",
+      "outcome": "accepted",
+      "pair_id": "31"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Crittografia",
+      "outcome": "accepted",
+      "pair_id": "32"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Ingegneria del software",
+      "outcome": "accepted",
+      "pair_id": "33"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Struttura dati",
+      "outcome": "accepted",
+      "pair_id": "34"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Complessità computazionale",
+      "outcome": "accepted",
+      "pair_id": "35"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Big data",
+      "outcome": "accepted",
+      "pair_id": "36"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Data mining",
+      "outcome": "accepted",
+      "pair_id": "37"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Cloud computing",
+      "outcome": "accepted",
+      "pair_id": "38"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Internet delle cose",
+      "outcome": "accepted",
+      "pair_id": "39"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Database relazionale",
+      "outcome": "rejected",
+      "reason": "pagina già presente nel corpus"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Software libero",
+      "outcome": "accepted",
+      "pair_id": "40"
+    },
+    {
+      "group": "informatica e dati",
+      "title": "Interfaccia di programmazione delle applicazioni",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Algebra",
+      "outcome": "accepted",
+      "pair_id": "41"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Geometria",
+      "outcome": "accepted",
+      "pair_id": "42"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Analisi matematica",
+      "outcome": "accepted",
+      "pair_id": "43"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Calcolo infinitesimale",
+      "outcome": "accepted",
+      "pair_id": "44"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Teoria della probabilità",
+      "outcome": "accepted",
+      "pair_id": "45"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Inferenza statistica",
+      "outcome": "accepted",
+      "pair_id": "46"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Distribuzione di probabilità",
+      "outcome": "accepted",
+      "pair_id": "47"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Variabile casuale",
+      "outcome": "rejected",
+      "reason": "pagina già presente nel corpus"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Campionamento (statistica)",
+      "outcome": "rejected",
+      "reason": "Voce it:'Campionamento (statistica)' non trovata"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Regressione lineare",
+      "outcome": "accepted",
+      "pair_id": "48"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Teorema di Bayes",
+      "outcome": "accepted",
+      "pair_id": "49"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Ottimizzazione (matematica)",
+      "outcome": "accepted",
+      "pair_id": "50"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Teoria dei grafi",
+      "outcome": "accepted",
+      "pair_id": "51"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Logica matematica",
+      "outcome": "accepted",
+      "pair_id": "52"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Matematica applicata",
+      "outcome": "accepted",
+      "pair_id": "53"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Equazione differenziale",
+      "outcome": "accepted",
+      "pair_id": "54"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Statistica descrittiva",
+      "outcome": "accepted",
+      "pair_id": "55"
+    },
+    {
+      "group": "matematica e statistica",
+      "title": "Serie matematica",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Genetica",
+      "outcome": "accepted",
+      "pair_id": "56"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Evoluzione",
+      "outcome": "accepted",
+      "pair_id": "57"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "DNA",
+      "outcome": "accepted",
+      "pair_id": "58"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Cellula",
+      "outcome": "accepted",
+      "pair_id": "59"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Ecosistema",
+      "outcome": "accepted",
+      "pair_id": "60"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Biodiversità",
+      "outcome": "accepted",
+      "pair_id": "61"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Oceano",
+      "outcome": "accepted",
+      "pair_id": "62"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Atmosfera terrestre",
+      "outcome": "accepted",
+      "pair_id": "63"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Sistema solare",
+      "outcome": "accepted",
+      "pair_id": "64"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Stella",
+      "outcome": "accepted",
+      "pair_id": "65"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Galassia",
+      "outcome": "accepted",
+      "pair_id": "66"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Molecola",
+      "outcome": "accepted",
+      "pair_id": "67"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Atomo",
+      "outcome": "accepted",
+      "pair_id": "68"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Reazione chimica",
+      "outcome": "accepted",
+      "pair_id": "69"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Termodinamica",
+      "outcome": "accepted",
+      "pair_id": "70"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Microbiologia",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Geologia",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "scienze naturali",
+      "title": "Vulcano",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Energia rinnovabile",
+      "outcome": "accepted",
+      "pair_id": "71"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Energia solare",
+      "outcome": "accepted",
+      "pair_id": "72"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Energia eolica",
+      "outcome": "accepted",
+      "pair_id": "73"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Energia idroelettrica",
+      "outcome": "accepted",
+      "pair_id": "74"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Combustibile fossile",
+      "outcome": "accepted",
+      "pair_id": "75"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Riscaldamento globale",
+      "outcome": "rejected",
+      "reason": "pagina già presente nel corpus"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Gas serra",
+      "outcome": "accepted",
+      "pair_id": "76"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Diossido di carbonio",
+      "outcome": "accepted",
+      "pair_id": "77"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Inquinamento atmosferico",
+      "outcome": "accepted",
+      "pair_id": "78"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Sostenibilità",
+      "outcome": "accepted",
+      "pair_id": "79"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Sviluppo sostenibile",
+      "outcome": "accepted",
+      "pair_id": "80"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Riciclaggio dei rifiuti",
+      "outcome": "accepted",
+      "pair_id": "81"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Deforestazione",
+      "outcome": "accepted",
+      "pair_id": "82"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Agricoltura sostenibile",
+      "outcome": "accepted",
+      "pair_id": "83"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Impronta ecologica",
+      "outcome": "accepted",
+      "pair_id": "84"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Economia circolare",
+      "outcome": "accepted",
+      "pair_id": "85"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Efficienza energetica",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Energia geotermica",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "ambiente ed energia",
+      "title": "Conservazione della natura",
+      "outcome": "not_needed"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Automobile elettrica",
+      "outcome": "accepted",
+      "pair_id": "86"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Bicicletta",
+      "outcome": "accepted",
+      "pair_id": "87"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Ferrovia",
+      "outcome": "accepted",
+      "pair_id": "88"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Metropolitana",
+      "outcome": "accepted",
+      "pair_id": "89"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Tram",
+      "outcome": "accepted",
+      "pair_id": "90"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Mobilità urbana",
+      "outcome": "rejected",
+      "reason": "Voce it:'Mobilità urbana' non trovata"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Pianificazione urbana",
+      "outcome": "rejected",
+      "reason": "Voce it:'Pianificazione urbana' non trovata"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Città intelligente",
+      "outcome": "accepted",
+      "pair_id": "91"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Veicolo autonomo",
+      "outcome": "rejected",
+      "reason": "Voce it:'Veicolo autonomo' non trovata"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Robot",
+      "outcome": "accepted",
+      "pair_id": "92"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Rete neurale artificiale",
+      "outcome": "accepted",
+      "pair_id": "93"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Apprendimento profondo",
+      "outcome": "accepted",
+      "pair_id": "94"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Visione artificiale",
+      "outcome": "accepted",
+      "pair_id": "95"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Riconoscimento vocale",
+      "outcome": "accepted",
+      "pair_id": "96"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Sistema di raccomandazione",
+      "outcome": "accepted",
+      "pair_id": "97"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Apprendimento per rinforzo",
+      "outcome": "accepted",
+      "pair_id": "98"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Elaborazione delle immagini",
+      "outcome": "accepted",
+      "pair_id": "99"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Sensore",
+      "outcome": "accepted",
+      "pair_id": "100"
+    },
+    {
+      "group": "mobilità e robotica",
+      "title": "Navigazione autonoma",
+      "outcome": "not_needed"
+    }
+  ]
+}
