@@ -1,6 +1,7 @@
-# Piano di valutazione — Specifica preliminare
+# Piano di valutazione
 
-**Non contiene risultati.** I dati e gli output saranno aggiunti soltanto dopo implementazione ed esecuzione.
+Gli esiti funzionali osservati in M4 sono disponibili in `evaluation/`; le
+misure di indicizzazione saranno aggiunte soltanto dopo le esecuzioni di M5.
 
 ## 1. Obiettivi
 
@@ -41,10 +42,15 @@ matrice copre:
 | Nome duplicato | `nome notes` | Distinguere percorsi differenti |
 
 Gli ID attesi sono percorsi relativi al corpus sintetico. File vuoto e codifica
-non UTF-8 sono fixture del corpus. M3 verifica le 13 query e il recupero dagli
-errori di sintassi di base; M4 estenderà la matrice dei casi limite.
+non UTF-8 sono fixture del corpus. M4 ha verificato tutte le 13 query e ha esteso
+la copertura a errori di sintassi, normalizzazione, analyzer e recupero della
+sessione CLI.
 
 **Misura di correttezza:** per ogni query confrontare l'insieme completo dei percorsi restituiti con l'insieme atteso. Un test è superato solo se i due insiemi coincidono.
+
+**Esito M4:** 13 casi su 13 superati. Attesi, osservati ed esiti sono registrati
+in `evaluation/functional_results.json`; ambiente, comandi e limite relativo ai
+symlink sono descritti in `evaluation/FUNCTIONAL_REPORT.md`.
 
 ## 4. Benchmark di indicizzazione
 

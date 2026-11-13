@@ -2,10 +2,10 @@
 
 Progetto per l'**Homework 3 — Ingegneria dei dati (A.A. 2026/27)**.
 
-**Stato:** M0–M3 completate. Il package Python è installabile, i corpus e
-l'oracolo sono verificati, la costruzione persistente dell'indice è disponibile
-e la CLI consente di indicizzare e cercare. I casi limite aggiuntivi, i risultati
-osservati e il report conclusivo saranno realizzati nelle milestone successive.
+**Stato:** M0–M4 completate. Il package Python è installabile, i corpus e
+l'oracolo sono verificati, la costruzione persistente dell'indice e la ricerca
+CLI sono disponibili, e i test funzionali sono documentati. Misure di
+prestazione e report conclusivo saranno realizzati nelle milestone successive.
 
 ## Obiettivo
 
@@ -62,6 +62,15 @@ Per eseguire la suite completa:
 python -m pytest
 ```
 
+Per rieseguire le 13 query dell'oracolo e aggiornare gli esiti osservati:
+
+```powershell
+python scripts/evaluate_functional.py
+```
+
+Il comando scrive `evaluation/functional_results.json` e restituisce un codice
+di errore se almeno un insieme di risultati non coincide con l'atteso.
+
 ## API di indicizzazione
 
 M2 espone la ricostruzione completa tramite Python:
@@ -100,6 +109,7 @@ Il corso richiede una relazione con URL della repository, motivazioni degli anal
 - Il corpus sintetico comprende 12 documenti validi, una fixture non UTF-8 e
   13 query con insiemi completi di risultati attesi.
 - Le 13 query dell'oracolo sono eseguite automaticamente contro l'indice del
-  corpus sintetico e confrontate con l'insieme completo dei percorsi attesi.
+  corpus sintetico e confrontate con l'insieme completo dei percorsi attesi;
+  gli esiti M4 sono conservati in `evaluation/functional_results.json`.
 - Il repository Git è locale; pubblicazione e verifica del collegamento GitHub
   sono previste in M7.

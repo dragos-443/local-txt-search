@@ -1,8 +1,8 @@
 # ROADMAP — Dal progetto alla consegna
 
-**Stato del progetto:** M0–M3 completate; bootstrap, corpus, oracolo,
-indicizzazione persistente, parser e CLI disponibili. I casi limite aggiuntivi
-e la registrazione degli esiti iniziano con M4.
+**Stato del progetto:** M0–M4 completate; bootstrap, corpus, oracolo,
+indicizzazione persistente, parser, CLI e verifica funzionale disponibili. La
+misurazione sperimentale inizia con M5.
 **Scadenza del corso:** 13 novembre 2026, ore 18:00.
 
 ## Dipendenze
@@ -24,7 +24,7 @@ M0 Fondazioni
 | **M1** | Preparare corpus e casi attesi | Corpus sintetico, corpus pubblico, manifest, matrice query | Dataset e attesi verificati | **Completata** |
 | **M2** | Implementare la costruzione indice | Scanner, reader, analyzer, schema, index writer | Scansione e indice persistente funzionanti | **Completata** |
 | **M3** | Implementare ricerca e CLI | Parser validato, comandi `index` e `search` | Query base, AND e phrase disponibili | **Completata** |
-| **M4** | Verificare correttezza | Test automatici, error handling | Query e casi limite conformi agli attesi | Da fare |
+| **M4** | Verificare correttezza | Test automatici, error handling | Query e casi limite conformi agli attesi | **Completata** |
 | **M5** | Misurare le prestazioni | Esecuzioni ripetute, risultati grezzi | Conteggi e tempi reali archiviati | Da fare |
 | **M6** | Redigere la relazione | Relazione con interpretazione dei dati | Ogni affermazione empirica è sostenuta da una misura | Da fare |
 | **M7** | Pubblicare e consegnare | Repo GitHub, README finale, relazione inviata | Link funzionante e invio completato | Da fare |
@@ -85,7 +85,7 @@ di sintassi senza interrompere la sessione. Il parser usa gli analyzer dello
 schema e costruisce soltanto query `Term`, `And` e `Phrase`. Tutte le 13 query
 dell'oracolo restituiscono l'insieme completo dei percorsi attesi.
 
-## M4 — Test funzionali [da fare]
+## M4 — Test funzionali [completata]
 
 - Mantenere come regressione il confronto completo delle 13 query con gli attesi.
 - Testare accenti, maiuscole, stopword, ordine, assenza di stemming e separatori nei filename.
@@ -93,6 +93,13 @@ dell'oracolo restituiscono l'insieme completo dei percorsi attesi.
 - Correggere i bug e mantenere traccia degli esiti.
 
 **Gate:** suite di test riproducibile e problemi residui espliciti.
+
+**Gate superato:** tutte le 13 query coincidono con gli insiemi completi attesi
+e gli esiti strutturati sono conservati in `evaluation/functional_results.json`.
+La suite copre inoltre analyzer, casi limite di indicizzazione, query malformate
+e recupero della CLI: 62 test superati e un test dei symlink saltato perché
+l'ambiente Windows di verifica non consente di crearli. Il limite è registrato
+nel resoconto funzionale.
 
 ## M5 — Valutazione delle prestazioni [da fare]
 

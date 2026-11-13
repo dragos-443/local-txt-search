@@ -114,6 +114,25 @@ def test_accepts_utf8_bom_and_uppercase_txt_extension(tmp_path: Path) -> None:
     assert result_paths(index_dir, Term("content", "\ufeffmobilita")) == set()
 
 
+def test_accepts_an_empty_file_and_skips_non_utf8_alongside_it(
+    tmp_path: Path,
+) -> None:
+    source = tmp_path / "source"
+    source.mkdir()
+    (source / "empty.txt").write_bytes(b"")
+    (source / "invalid.txt").write_bytes(b"\xff")
+    index_dir = tmp_path / "index"
+
+    stats = rebuild_index(source, index_dir)
+
+    assert stats.discovered_files == 2
+    assert stats.indexed_files == 1
+    assert stats.skipped_files == 1
+    assert stats.skips[0].path == "invalid.txt"
+    assert stats.skips[0].reason is SkipReason.INVALID_ENCODING
+    assert result_paths(index_dir, Every()) == {"empty.txt"}
+
+
 def test_ignores_symbolic_links(tmp_path: Path) -> None:
     source = tmp_path / "source"
     source.mkdir()

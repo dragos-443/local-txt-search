@@ -46,6 +46,59 @@ def test_all_oracle_queries_return_the_complete_expected_set(
     assert actual_paths == expected_paths
 
 
+@pytest.mark.parametrize(
+    ("query_text", "expected_paths"),
+    [
+        (
+            "contenuto MOBILITÀ",
+            {"it/trasporto-pubblico.txt"},
+        ),
+        (
+            "contenuto dei",
+            {"it/integrazione_dati.txt", "it/università_città.txt"},
+        ),
+        (
+            "contenuto sources data",
+            {"en/data-integration.txt", "en/data_notes.txt"},
+        ),
+        ("contenuto run", set()),
+        ("nome data integration", {"en/data-integration.txt"}),
+        ("nome trasporto pubblico", {"it/trasporto-pubblico.txt"}),
+        (
+            "nome notes",
+            {"a/notes.txt", "b/notes.txt", "en/data_notes.txt"},
+        ),
+    ],
+    ids=[
+        "case-and-accent-normalization",
+        "stopwords-are-indexed",
+        "and-order-is-irrelevant",
+        "stemming-is-disabled",
+        "hyphen-separates-filename-tokens",
+        "hyphen-separates-italian-filename-tokens",
+        "duplicate-filenames-keep-distinct-paths",
+    ],
+)
+def test_analyzer_edge_cases(
+    synthetic_index: Path,
+    query_text: str,
+    expected_paths: set[str],
+) -> None:
+    with SearchSession(synthetic_index) as session:
+        actual_paths = {hit.path for hit in session.search(query_text)}
+
+    assert actual_paths == expected_paths
+
+
+def test_phrase_order_is_significant(synthetic_index: Path) -> None:
+    with SearchSession(synthetic_index) as session:
+        forward = {hit.path for hit in session.search('nome "data integration"')}
+        reverse = {hit.path for hit in session.search('nome "integration data"')}
+
+    assert forward == {"en/data-integration.txt"}
+    assert reverse == set()
+
+
 def test_parser_builds_only_the_supported_query_types() -> None:
     schema = index_schema()
 
@@ -65,11 +118,19 @@ def test_parser_builds_only_the_supported_query_types() -> None:
     "query_text",
     [
         "",
+        "   ",
         "sconosciuto data",
         "nome",
+        'nome ""',
         'nome "data integration',
         'nome "data integration" notes',
+        'nome "data" "integration"',
         "nome data*",
+        "nome data?",
+        "nome (data)",
+        "nome [data]",
+        "nome data~",
+        "nome data\\integration",
         "contenuto foo:bar",
         "contenuto !!!",
     ],

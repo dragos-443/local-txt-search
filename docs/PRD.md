@@ -2,7 +2,7 @@
 
 **Progetto:** `local-txt-search`  
 **Corso:** Ingegneria dei dati — Homework 3 (individuale), 2026/2027  
-**Stato:** M0–M3 completate; indicizzazione e ricerca CLI disponibili
+**Stato:** M0–M4 completate; indicizzazione, ricerca CLI e verifica funzionale disponibili
 **Ultima revisione:** 11 novembre 2026
 
 ## 1. Problema
@@ -97,8 +97,9 @@ contenuto "<frase>"                    # adiacenza e ordine
 - **Corpus B (reale):** 50 introduzioni Wikipedia `.txt` (25 IT + 25 EN) con
   revisioni congelate; fonte, licenza, trasformazioni, percorso, bytes e hash
   SHA-256 sono registrati nel manifest.
-- Le 13 query e gli insiemi attesi sono in `evaluation/queries.json`. Non sono
-  ancora presenti risultati osservati o misure di indicizzazione.
+- Le 13 query e gli insiemi attesi sono in `evaluation/queries.json`; gli
+  insiemi osservati in M4 sono in `evaluation/functional_results.json`. Le
+  misure di indicizzazione saranno raccolte in M5.
 
 ## 8. Qualità, verificabilità e limiti
 
@@ -115,7 +116,7 @@ contenuto "<frase>"                    # adiacenza e ordine
 - [x] I due analyzer sono implementati e motivati.
 - [x] Query semplici, AND e per frase restituiscono l'insieme corretto di documenti.
 - [x] File non UTF-8 vengono saltati e segnalati.
-- [ ] Test funzionali documentati e superati, salvo problemi dichiarati.
+- [x] Test funzionali documentati e superati, salvo problemi dichiarati.
 - [ ] Tre misurazioni di indicizzazione registrate sullo stesso corpus e sintetizzate.
 - [ ] Relazione completata con URL GitHub e dati realmente osservati.
 
